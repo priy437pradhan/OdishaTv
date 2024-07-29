@@ -1,16 +1,35 @@
-import NewsList from '../components/NewsList';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Listing = () => {
-  const articles = [
-    { title: 'Article 1', summary: 'Summary of article 1', image: 'path/to/image1.jpg' },
-    { title: 'Article 2', summary: 'Summary of article 2', image: 'path/to/image2.jpg' },
-    { title: 'Article 3', summary: 'Summary of article 3', image: 'path/to/image3.jpg' },
-  ];
-
+const Listing = ({ articles }) => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Listing Page</h1>
-      <NewsList articles={articles} />
+    <div className="max-w-7xl mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-4">News Listings</h1>
+      <div className="custom-grid">
+        {articles.length > 0 ? (
+          articles.map((article) => (
+            <div key={article.id} className="custom-grid-item">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
+                <p className="text-gray-600 mb-4">{article.excerpt}</p>
+                <Link
+                  to={`/story/${article.id}`}
+                  className="text-blue-500 hover:text-blue-700 font-medium"
+                >
+                  Read more
+                </Link>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p>No articles available</p>
+        )}
+      </div>
     </div>
   );
 };

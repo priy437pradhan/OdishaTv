@@ -1,7 +1,9 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const Story = ({ match }) => {
-  const { id } = match.params;
-  const article = { title: 'Article ' + id, content: 'Full content of article ' + id };
+const Story = () => {
+  const { id } = useParams();
+  const article = { title: 'Article ', content: 'Full content of article ' };
 
   return (
     <div className="container mx-auto p-4">
