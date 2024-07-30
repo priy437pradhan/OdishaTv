@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { CombinedData } from '../lib/Categories';
 import { Link } from 'react-router-dom';
 
-const Listing = ({ articles }) => {
+const Listing = () => {
+  const { category } = useParams();
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const filteredArticles = CombinedData.filter(article => article.category === category);
+    setArticles(filteredArticles);
+  }, [category]);
+
   return (
     <div className="max-w-7xl mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">News Listings</h1>
+      <h1 className="text-3xl font-bold mb-4">{category} Listings</h1>
       <div className="custom-grid">
         {articles.length > 0 ? (
           articles.map((article) => (

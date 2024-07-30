@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LiveNewsCard from '../components/LiveNewsCard';
+import testing from '../assets/testing.jpg'
 
-const NewsList = ({ articles = [
-  { id: 1, title: 'Article 1', summary: 'Summary of article 1', image: 'path/to/image1.jpg' },
-  { id: 2, title: 'Article 2', summary: 'Summary of article 2', image: 'path/to/image2.jpg' },
-  { id: 3, title: 'Article 3', summary: 'Summary of article 3', image: 'path/to/image3.jpg' },
-], newsItem = { imageUrl: 'path/to/liveNewsImage.jpg', headline: 'Live News Headline' } }) => {
+const NewsList = ({ 
+  // articles = [
+  // { id: 1, title: 'Article 1', summary: 'Summary of article 1', image: 'path/to/image1.jpg' },
+  // { id: 2, title: 'Article 2', summary: 'Summary of article 2', image: 'path/to/image2.jpg' },
+  // { id: 3, title: 'Article 3', summary: 'Summary of article 3', image: 'path/to/image3.jpg' },
+  //   ], 
+newsItem = { imageUrl:testing, headline: 'Live News Headline' } }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[6fr_2fr_4fr] gap-6 mt-48">
       <div className="lg:col-span-1">
@@ -16,7 +19,7 @@ const NewsList = ({ articles = [
           </Link>
         </div>
 
-        {articles.map((article) => (
+        {/* {articles.map((article) => (
           <Link key={article.id} to={`/story/${article.id}`} className="bg-white shadow-md rounded-lg overflow-hidden block mb-2">
             <div className="w-full h-48">
               <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
@@ -26,7 +29,7 @@ const NewsList = ({ articles = [
               <p className="text-gray-600 mb-4">{article.summary}</p>
             </div>
           </Link>
-        ))}
+        ))} */}
       </div>
 
       <div className="lg:col-span-1 p-4 bg-gray-200">
