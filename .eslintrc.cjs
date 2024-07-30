@@ -18,7 +18,7 @@ module.exports = {
     'react'
   ],
   rules: {
-    'react/prop-types': 'warn', // or 'error' for stricter enforcement
-    'react/react-in-jsx-scope': 'on' // Optional: Disable if using React 17+ with JSX transform
+    'react/prop-types': 'warn', 
+    'react/react-in-jsx-scope': 'off'
   }
 };
