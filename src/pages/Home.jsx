@@ -8,9 +8,9 @@ const NewsList = ({ articles = [
   { id: 3, title: 'Article 3', summary: 'Summary of article 3', image: 'path/to/image3.jpg' },
 ], newsItem = { imageUrl: 'path/to/liveNewsImage.jpg', headline: 'Live News Headline' } }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[6fr_2fr_4fr] gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-[6fr_2fr_4fr] gap-6 mt-48">
       <div className="lg:col-span-1">
-        <div className="w-full h-84 mb-4">
+        <div className="w-full h-96 mb-4">
           <Link to="/story/live" className="bg-white shadow-md rounded-lg overflow-hidden block mb-2">
             <LiveNewsCard imageUrl={newsItem.imageUrl} headline={newsItem.headline} />
           </Link>
