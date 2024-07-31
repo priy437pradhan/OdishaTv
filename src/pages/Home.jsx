@@ -10,19 +10,12 @@ const NewsList = ({
   singleCardItem = [
     { id: 1, imageUrl: testing, headline: 'Single News Headline 1' },
     { id: 2, imageUrl: testing, headline: 'Single News Headline 2' },
-    { id: 3, imageUrl: testing, headline: 'Single News Headline 3' },
-    { id: 4, imageUrl: testing, headline: 'Single News Headline 4' },
-    { id: 5, imageUrl: testing, headline: 'Single News Headline 5' },
+   
   ],
   liveSubCardItem = [
     { id: 11, imgSrc: testing, title: 'Live Subcard News Headline 1', content: 'xxxxxxxxx' },
     { id: 12, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
-    { id: 14, imgSrc: testing, title: 'Live Subcard News Headline 3', content: 'xxxxxxxxx' },
-    { id: 15, imgSrc: testing, title: 'Live Subcard News Headline 4', content: 'xxxxxxxxx' },
-    { id: 16, imgSrc: testing, title: 'Live Subcard News Headline 5', content: 'xxxxxxxxx' },
-    { id: 17, imgSrc: testing, title: 'Live Subcard News Headline 6', content: 'xxxxxxxxx' },
-    { id: 18, imgSrc: testing, title: 'Live Subcard News Headline 7', content: 'xxxxxxxxx' },
-    { id: 19, imgSrc: testing, title: 'Live Subcard News Headline 8', content: 'xxxxxxxxx' },
+    
   ],
 }) => {
   return (
