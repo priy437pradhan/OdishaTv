@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 
-.separator::after {
-    content: '';
-    display: inline-block;
-    height: 20px;
-    width: 2px;
-    background-color: rgb(246, 40, 40);
-    margin-left: 8px; 
-  }
-  
-  @media (min-width: 640px) { /* Apply to small screens and up */
-    .logo-container {
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-  }
-  
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 2px solid black; 
+  width: -webkit-fill-available;
+}
+.custom-before::before {
+  content: "";
+  display: inline-block;
+  width: 0.375rem;
+  height: 1.5rem; 
+  background-color: #ef4444; 
+  margin-right: 0.5rem; 
+  vertical-align: middle;
+}
+
+

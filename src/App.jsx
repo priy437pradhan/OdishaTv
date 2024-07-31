@@ -1,5 +1,4 @@
 import Header from './components/HeaderComponent'
-// import Footer from './components/FooterComponent'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Listing from './pages/Listing';
@@ -12,7 +11,7 @@ function App() {
   return (
     <Router>
     <Header />
-      <div className="flex-1 container mx-auto px-0  lg:px-8 mt-32">
+      <div className="flex-1 container mx-auto mt-12 px-24">
       <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/listing" element={<Listing />} />

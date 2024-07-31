@@ -25,15 +25,15 @@ const LiveNewsCard = ({ imageUrl, headline }) => {
       <img
         src={imageUrl}
         alt={headline}
-        className="absolute inset-0 w-full h-96 object-cover"
+        className="absolute inset-0 w-full h-84 object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t h-96 from-black opacity-50"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-t h-96 from-black opacity-50"></div> */}
       <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold flex items-center">
         <span style={dotStyle}></span>
         LIVE
         <style>{blinkKeyframes}</style>
       </div>
-      <div className="absolute bottom-4 left-4 text-white text-xl font-bold">
+      <div className="absolute bottom-4 left-4 text-black bg-white text-xl font-bold">
         {headline}
       </div>
     </div>

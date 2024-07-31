@@ -4,23 +4,29 @@ import LiveNewsCard from '../components/LiveNewsCard';
 import testing from '../assets/testing.jpg';
 import SingleCard from '../components/SingleCard';
 import LiveSubCard from '../components/LiveSubCard';
+import WatchSlider from '../components/WatchSlider';
 
 const NewsList = ({
   liveNewsItem = { imageUrl: testing, headline: 'Live News Headline' },
   singleCardItem = [
     { id: 1, imageUrl: testing, headline: 'Single News Headline 1' },
-    { id: 2, imageUrl: testing, headline: 'Single News Headline 2' },
    
   ],
   liveSubCardItem = [
     { id: 11, imgSrc: testing, title: 'Live Subcard News Headline 1', content: 'xxxxxxxxx' },
     { id: 12, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
+    { id: 13, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
+    { id: 14, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
+    { id: 14, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
+    { id: 14, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
+    { id: 14, imgSrc: testing, title: 'Live Subcard News Headline 2', content: 'xxxxxxxxx' },
     
   ],
 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[3fr_6fr_3fr] gap-6 mt-12 lg:mt-56 px-4 lg:px-0">
+    <div className="grid grid-cols-1 lg:grid-cols-[3fr_6fr_3fr] gap-6  px-4 lg:px-0">
       <div className="lg:col-span-1">
+      <WatchSlider />
         {singleCardItem.map((item) => (
           <Link key={item.id} to={`/story/${item.id}`} className="overflow-hidden block mb-2">
             <SingleCard imageUrl={item.imageUrl} headline={item.headline} />
