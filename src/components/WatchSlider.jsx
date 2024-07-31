@@ -77,7 +77,7 @@ const WatchSlider = () => {
                   style={{ height: '220px' }}
                 />
               </Link>
-              <div className=" bg-white bg-opacity-90 p-1 shadow-md">
+              <div className=" bg-white bg-opacity-90 p-1 shadow-sm">
                 <h3 className="text-sm leading-5 m-0 min-h-[60px] my-2 mx-2">
                   <Link to={linkHref} title={linkTitle}>
                     <strong className="text-xs text-white bg-red-600 p-1 rounded-sm uppercase font-bold">

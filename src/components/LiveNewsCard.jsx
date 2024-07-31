@@ -33,7 +33,7 @@ const LiveNewsCard = ({ imageUrl, headline }) => {
         LIVE
         <style>{blinkKeyframes}</style>
       </div>
-      <div className="absolute bottom-4 left-4 text-black bg-white text-xl font-bold">
+      <div className="absolute bottom-4 p-2 px-4 text-black bg-white text-xl font-bold">
         {headline}
       </div>
     </div>
