@@ -18,7 +18,6 @@ const categories = [
   { name: "Business", path: "/business" },
   { name: "Technology", path: "/technology" },
   { name: "Sports", path: "/sports" },
-  { name: "Science/Space", path: "/science-space" },
   { name: "Health", path: "/health" },
   { name: "Education", path: "/education" },
   { name: "Environment", path: "/environment" },
@@ -104,24 +103,24 @@ const Header = () => {
       </div>
 
       <div
-        id="third-row"
-        className="flex justify-between items-center bg-white border-b-2 text-black py-1 px-2"
+  id="third-row"
+  className="flex justify-between items-center bg-white border-b-2 text-black py-1 px-2"
+>
+  <div className="flex-1 flex lg:justify-center overflow-x-auto space-x-4">
+    <Link to="/" className="text-lg whitespace-nowrap hover:underline">
+      <img src={white_logo} alt="White Logo" />
+    </Link>
+    {categories.map((category, index) => (
+      <Link
+        key={index}
+        to={`/category/${category.name.toLowerCase()}`}
+        className="text-lg whitespace-nowrap hover:underline"
       >
-        <div className="flex-1 flex lg:justify-center overflow-x-auto space-x-4">
-          <Link to="/" className="text-lg whitespace-nowrap hover:underline">
-            <img src={white_logo} alt="White Logo" />
-          </Link>
-          {categories.map((category, index) => (
-            <Link
-              key={index}
-              to={category.path}
-              className="text-lg whitespace-nowrap hover:underline"
-            >
-              {category.name}
-            </Link>
-          ))}
-        </div>
-      </div>
+        {category.name}
+      </Link>
+    ))}
+  </div>
+</div>
     </header>
   );
 };

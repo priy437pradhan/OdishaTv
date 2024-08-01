@@ -26,36 +26,40 @@ const NewsList = () => {
       try {
         const data = sampleData;
 
-        setStories(data.slice(1, 6).map((article) => ({
+        setStories(data.slice(1, 6).map((article, index) => ({
+          id: article.id,
           headline: article.title,
           imageSrc: article.urlToImage,
-          category: 'Category',
+          category: article.category,
         })));
-        setCardOneData(data.slice(6, 17).map((article) => ({
+        setCardOneData(data.slice(6, 17).map((article, index) => ({
+          id: article.id,
           headline: article.title,
           imageSrc: article.urlToImage,
-          category: 'Category',
+          category: article.category,
         })));
-        setCardTwoData(data.slice(17, 28).map((article) => ({
+        setCardTwoData(data.slice(17, 28).map((article, index) => ({
+          id: article.id,
           headline: article.title,
           imageSrc: article.urlToImage,
-          category: 'Category',
+          category: article.category,
         })));
-        setCardThreeData(data.slice(28, 29).map((article) => ({
+        setCardThreeData(data.slice(28, 29).map((article, index) => ({
+          id: article.id,
           headline: article.title,
           imageSrc: article.urlToImage,
-          category: 'Category',
+          category: article.category,
         })));
         setSingleCardItem(data.slice(29, 35).map((article, index) => ({
-          id: index + 1,
+          id: article.id,
           imageUrl: article.urlToImage,
           headline: article.title,
         })));
         setLiveNewsItem(data.slice(35, 37).map((article, index) => ({
-          id: index + 1,
+          id: article.id,
           imageUrl: article.urlToImage,
           headline: article.title,
-          category: 'Category',
+          category: article.category,
         })));
       } catch (error) {
         setError('Error fetching news data');
@@ -75,9 +79,10 @@ const NewsList = () => {
         <WatchSlider />
         <div className="p-2 bg-white shadow-md rounded-sm overflow-hidden block mb-4">
           <HeadingComponent2 title="Top Trending" />
-          {cardOneData.slice(0, 11).map((item, index) => (
+          {cardOneData.slice(0, 11).map((item) => (
             <CardOne
-              key={index}
+              key={item.id}
+              id={item.id}
               headline={item.headline}
               imageSrc={item.imageSrc}
               category={item.category}
@@ -91,8 +96,8 @@ const NewsList = () => {
             <LiveNewsCard imageUrl={liveNewsItem[0]?.imageUrl} headline={liveNewsItem[0]?.headline} />
           </Link>
           <div className="grid grid-cols-[6fr_6fr] gap-4 py-4">
-            {liveNewsItem.map((liveNews, index) => (
-              <div key={index} className="col-span-1">
+            {liveNewsItem.map((liveNews) => (
+              <div key={liveNews.id} className="col-span-1">
                 <LiveSubCardOne
                   headline={liveNews.headline}
                   imageSrc={liveNews.imageUrl}
@@ -101,38 +106,36 @@ const NewsList = () => {
             ))}
           </div>
           <div className="flex flex-wrap -mx-2 py-2">
-            {stories.slice(0, 3).map((story, index) => (
-              <div key={index} className="w-full sm:w-1/3 px-2 mb-4">
+            {stories.slice(0, 3).map((story) => (
+              <div key={story.id} className="w-full sm:w-1/3 px-2 mb-4">
                 <WebStoryCard
                   headline={story.headline}
                   imageSrc={story.imageSrc}
-                  link={story.link}
+                  link={`/story/${story.id}`}
                 />
               </div>
             ))}
           </div>
           <div className="grid grid-cols-[8fr_4fr] gap-4 py-2">
             <div className="flex flex-col shadow-md">
-              {singleCardItem.slice(0, 3).map((story, index) => (
+              {singleCardItem.slice(0, 3).map((story) => (
                 <div key={story.id} className="p-2 w-full">
-                  <Link to={`/category/${story.id}`}>
-                    <SingleCard
-                      headline={story.headline}
-                      imageUrl={story.imageUrl}
-                      isLast={index === singleCardItem.slice(0, 3).length - 1}
-                    />
-                  </Link>
+                  <SingleCard
+                    headline={story.headline}
+                    imageUrl={story.imageUrl}
+                    isLast={story.id === singleCardItem[singleCardItem.length - 1].id}
+                  />
                 </div>
               ))}
             </div>
             <div className="col-span-1">
               <div className="flex flex-wrap">
-                {stories.slice(3, 4).map((story, index) => (
-                  <div key={index} className="w-full px-2 mb-4">
+                {stories.slice(3, 4).map((story) => (
+                  <div key={story.id} className="w-full px-2 mb-4">
                     <WebStoryCard
                       headline={story.headline}
                       imageSrc={story.imageSrc}
-                      link={story.link}
+                      link={`/story/${story.id}`}
                     />
                   </div>
                 ))}
@@ -142,24 +145,24 @@ const NewsList = () => {
           <div className="grid grid-cols-[4fr_8fr] gap-4 py-2">
             <div className="col-span-1">
               <div className="flex flex-wrap">
-                {stories.slice(4, 5).map((story, index) => (
-                  <div key={index} className="w-full px-2 mb-4">
+                {stories.slice(4, 5).map((story) => (
+                  <div key={story.id} className="w-full px-2 mb-4">
                     <WebStoryCard
                       headline={story.headline}
                       imageSrc={story.imageSrc}
-                      link={story.link}
+                      link={`/story/${story.id}`}
                     />
                   </div>
                 ))}
               </div>
             </div>
             <div className="flex flex-col shadow-md">
-              {singleCardItem.slice(0, 3).map((story, index) => (
+              {singleCardItem.slice(0, 3).map((story) => (
                 <div key={story.id} className="p-2 w-full">
                   <SingleCard
                     headline={story.headline}
                     imageUrl={story.imageUrl}
-                    isLast={index === singleCardItem.slice(0, 3).length - 1}
+                    isLast={story.id === singleCardItem[singleCardItem.length - 1].id}
                     id={story.id}
                   />
                 </div>
@@ -172,9 +175,9 @@ const NewsList = () => {
         <AdType1 />
         <div className="bg-white p-2 shadow-md my-2">
           <HeadingComponent2 title="Top Trending" />
-          {cardThreeData.slice(0, 1).map((item, index) => (
+          {cardThreeData.slice(0, 1).map((item) => (
             <CardThree
-              key={index}
+              key={item.id}
               headline={item.headline}
               imageSrc={item.imageSrc}
               category={item.category}
@@ -182,9 +185,9 @@ const NewsList = () => {
           ))}
         </div>
         <div className="my-2">
-          {cardTwoData.slice(0, 7).map((item, index) => (
+          {cardTwoData.slice(0, 7).map((item) => (
             <CardTwo
-              key={index}
+              key={item.id}
               headline={item.headline}
               imageSrc={item.imageSrc}
               category={item.category}
