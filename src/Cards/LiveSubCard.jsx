@@ -2,6 +2,7 @@ import React from 'react';
 
 const LiveSubCard = ({ title, content, imgSrc }) => {
   return (
+    <Link to={`/story/${headline}`}>
     <div className="h-[80px] bg-white border-b-2 rounded-sm flex items-center p-2">
       <div className="w-[67%]">
         <h3 className="text-zinc-950">{title}</h3>
@@ -11,6 +12,7 @@ const LiveSubCard = ({ title, content, imgSrc }) => {
         <img src={imgSrc} alt="Image" className="h-full object-cover rounded" />
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import sampleData from '../lib/sampleData'; 
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import sampleData from '../lib/sampleData';
 import { AdType1 } from '../Cards/Advertisement';
 import CardOne from '../Cards/CardOne';
 
@@ -61,7 +60,7 @@ const CategoryListing = () => {
           {paginatedData.length > 0 ? (
             paginatedData.map(item => (
               <div key={item.id} className="flex border rounded-sm overflow-hidden h-40">
-                <Link to={`/CardOne/${item.id}`} className="flex-shrink-0">
+                <Link to={`/story/${encodeURIComponent(item.title)}`} className="flex-shrink-0">
                   <img 
                     src={item.urlToImage} 
                     alt={item.title} 
@@ -71,7 +70,7 @@ const CategoryListing = () => {
                 </Link>
                 <div className="flex flex-col justify-between ml-4 p-3 flex-1">
                   <div>
-                    <Link to={`/CardOne/${item.id}`}>
+                    <Link to={`/story/${encodeURIComponent(item.title)}`}>
                       <h2 className="text-sm font-bold mb-2">{item.title}</h2>
                     </Link>
                   </div>
@@ -103,11 +102,12 @@ const CategoryListing = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-3/12 p-4">
+      <div className="w-full md:w-3/12 my-2 p-4">
         <h2 className="text-xl font-bold mb-4">Related Data</h2>
         <AdType1 />
-        <div className='my-4'>
-        <h2 className="text-xl font-bold">Latest News</h2>
+        <div className='my-6'>
+          <h3 className="text-xl font-bold mb-2">Latest News</h3>
+        
         {cardOneData.slice(0, 11).map(item => (
           <CardOne
             key={item.id}
@@ -115,7 +115,6 @@ const CategoryListing = () => {
             headline={item.headline}
             imageSrc={item.imageSrc}
             category={item.category}
-            
           />
         ))}
         </div>

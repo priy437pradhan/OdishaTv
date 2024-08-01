@@ -5,7 +5,7 @@ const CardOne = ({ headline, imageSrc, category,id }) => {
   return (
     <div className="py-4 flex pr-4 h-28">
       <div className="w-2/5 h-24">
-        <Link to={`/CardOne/${id}`}>
+        <Link to={`/story/${headline}`}>
           <img 
             src={imageSrc} 
             alt={headline} 
@@ -15,10 +15,12 @@ const CardOne = ({ headline, imageSrc, category,id }) => {
         </Link>
       </div>
       <div className="w-3/5 pl-2 flex flex-col justify-between">
-        <Link to={`/CardOne/${id}`}>
+        <Link to={`/story/${headline}`}>
           <h2 className="text-sm font-bold max-h-[68px] overflow-hidden mb-2">{headline}</h2>
         </Link>
+        <Link to={`/category/${category}`}>
         <p className="text-gray-600">{category}</p>
+        </Link>
       </div>
     </div>
   );

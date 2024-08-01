@@ -5,7 +5,7 @@ const LiveSubCardOne =({ headline, imageSrc, category })  => {
   return (
     <div className="w-full px-1 h-80">
       <div className="bg-white h-full relative pb-6 shadow-md rounded-sm">
-        <Link to='/new' title={headline}>
+        <Link to={`/story/${headline}`} title={headline}>
           <img
             src={imageSrc} 
             alt={headline}
@@ -17,7 +17,7 @@ const LiveSubCardOne =({ headline, imageSrc, category })  => {
         </Link>
         <ul className="px-4">
           <li className="list-none text-xs text-gray-700 uppercase">
-            <Link to="/new" title={category} className="text-blue-700 font-semibold">
+            <Link to={`/story/${headline}`} title={category} className="text-blue-700 font-semibold">
               {category}
             </Link>
           </li>

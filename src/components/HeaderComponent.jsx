@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/LOGO.png";
-import darkmode_img from "../assets/dark-mode.png";
+// import darkmode_img from "../assets/dark-mode.png";
 import facebook_img from "../assets/facebook-bn.png";
 import insta_img from "../assets/insta.png";
 import koko_img from "../assets/Koko.png";
@@ -10,7 +10,9 @@ import twitter_img from "../assets/twitter-header.png";
 import whatsapp_img from "../assets/whatsapp.png";
 import youtube_img from "../assets/youtube.png";
 import white_logo from "../assets/logo-white.png";
+import DarkModeToggle from '../components/DarkModeToggle';
 import "../App.css";
+
 
 const categories = [
   { name: "World", path: "/world" },
@@ -98,7 +100,8 @@ const Header = () => {
             live tv
             <span className="absolute left-[-25px] top-1 h-3 w-3 bg-red-600 rounded-full shadow-[0_0_0_0_rgba(244,176,27,0.7)] animate-pulse"></span>
           </Link>
-          <img className="h-8 w-auto" src={darkmode_img} alt="Dark View" />
+          {/* <img className="h-8 w-auto" src={darkmode_img} alt="Dark View" /> */}
+          <DarkModeToggle />
         </div>
       </div>
 
