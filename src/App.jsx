@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className="flex-1 container mx-auto mt-12 px-32">
+      <div className="flex-1 container mx-auto px-2 lg:px-32 mt-12">
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/listing" element={<Listing />} /> */}
