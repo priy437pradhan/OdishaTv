@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import SingleCard from '../Cards/SingleCard';
 import LiveNewsCard from '../Cards/LiveNewsCard';
 import WatchSlider from '../Cards/WatchSlider';
@@ -11,6 +10,7 @@ import { HeadingComponent2 } from './HeadingComponent';
 import CardTwo from '../Cards/CardTwo';
 import CardThree from '../Cards/CardThree';
 import WebStoryCard from '../Cards/WebstoryComponent';
+import sampleData from '../lib/sampleData';
 
 const NewsList = () => {
   const [liveNewsItem, setLiveNewsItem] = useState([]);
@@ -22,12 +22,9 @@ const NewsList = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchNewsData = async () => {
+    const fetchData = () => {
       try {
-        const response = await axios.get(
-          'https://newsapi.org/v2/everything?q=tesla&from=2024-07-01&sortBy=publishedAt&apiKey=058dfeda8d7841a79a7efa0429c1518a'
-        );
-        const data = response.data.articles;
+        const data = sampleData;
 
         setStories(data.slice(1, 6).map((article) => ({
           headline: article.title,
@@ -58,14 +55,14 @@ const NewsList = () => {
           id: index + 1,
           imageUrl: article.urlToImage,
           headline: article.title,
-          category: 'Category', 
+          category: 'Category',
         })));
       } catch (error) {
         setError('Error fetching news data');
         console.error('Error fetching news data:', error);
       }
     };
-    fetchNewsData();
+    fetchData();
   }, []);
 
   if (error) {
@@ -96,9 +93,9 @@ const NewsList = () => {
           <div className="grid grid-cols-[6fr_6fr] gap-4 py-4">
             {liveNewsItem.map((liveNews, index) => (
               <div key={index} className="col-span-1">
-                <LiveSubCardOne 
+                <LiveSubCardOne
                   headline={liveNews.headline}
-                  imageSrc={liveNews.imageSrc} 
+                  imageSrc={liveNews.imageUrl}
                 />
               </div>
             ))}
