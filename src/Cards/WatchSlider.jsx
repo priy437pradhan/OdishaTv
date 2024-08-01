@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Watch_img from '../assets/testing.jpg';
-import {HeadingComponent} from './HeadingComponent';
+import {HeadingComponent} from '../components/HeadingComponent';
 
 const sliderData = [
   {
@@ -56,7 +56,7 @@ const WatchSlider = () => {
     };
   
     return (
-      <div className="relative mb-4 shadow-md" style={{ height: '350px' }}>
+      <div className="relative mb-4 h-80 shadow-md" >
         <div className="p-2">
         <HeadingComponent title="watch" />
 
@@ -74,7 +74,7 @@ const WatchSlider = () => {
                   src={imgSrc}
                   alt={imgAlt}
                   className="object-cover rounded-sm shadow-sm"
-                  style={{ height: '220px' }}
+                  style={{ height: '190px' }}
                 />
               </Link>
               <div className=" bg-white bg-opacity-90 p-1 shadow-sm">

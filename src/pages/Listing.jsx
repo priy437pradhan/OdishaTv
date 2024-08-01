@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { CombinedData } from '../lib/Categories';
 import { Link } from 'react-router-dom';
 
 const Listing = () => {
