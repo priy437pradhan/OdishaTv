@@ -1,4 +1,3 @@
-// src/components/NewsList.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -20,6 +19,7 @@ const NewsList = () => {
   const [cardTwoData, setCardTwoData] = useState([]);
   const [cardThreeData, setCardThreeData] = useState([]);
   const [singleCardItem, setSingleCardItem] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchNewsData = async () => {
@@ -29,7 +29,7 @@ const NewsList = () => {
         );
         const data = response.data.articles;
 
-        setStories(data.slice(1, 6).map((article, index) => ({
+        setStories(data.slice(1, 6).map((article) => ({
           headline: article.title,
           imageSrc: article.urlToImage,
           category: 'Category',
@@ -61,13 +61,16 @@ const NewsList = () => {
           category: 'Category', 
         })));
       } catch (error) {
+        setError('Error fetching news data');
         console.error('Error fetching news data:', error);
       }
     };
     fetchNewsData();
   }, []);
 
-  
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[3fr_6fr_3fr] gap-6 px-4 lg:px-0">
@@ -91,10 +94,12 @@ const NewsList = () => {
             <LiveNewsCard imageUrl={liveNewsItem[0]?.imageUrl} headline={liveNewsItem[0]?.headline} />
           </Link>
           <div className="grid grid-cols-[6fr_6fr] gap-4 py-4">
-            {liveNewsItem.map((liveNewsItem, index) => (
+            {liveNewsItem.map((liveNews, index) => (
               <div key={index} className="col-span-1">
-                <LiveSubCardOne  headline={liveNewsItem.headline}
-                  imageSrc={liveNewsItem.imageSrc} />
+                <LiveSubCardOne 
+                  headline={liveNews.headline}
+                  imageSrc={liveNews.imageSrc} 
+                />
               </div>
             ))}
           </div>
