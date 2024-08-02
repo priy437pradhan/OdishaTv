@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const LiveNewsCard = ({ imageUrl, headline }) => {
   const dotStyle = {
     width: '8px',
@@ -22,20 +22,24 @@ const LiveNewsCard = ({ imageUrl, headline }) => {
 
   return (
     <div className="relative w-full h-96">
+      <Link to={`/story/${headline}`}>
       <img
         src={imageUrl}
         alt={headline}
         className="absolute inset-0 w-full h-84 object-cover"
       />
+      </Link>
       {/* <div className="absolute inset-0 bg-gradient-to-t h-96 from-black opacity-50"></div> */}
       <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold flex items-center">
         <span style={dotStyle}></span>
         LIVE
         <style>{blinkKeyframes}</style>
       </div>
-      <div className="absolute bottom-4 p-2 px-4 text-black bg-white text-xl font-bold">
+      <Link to={`/story/${headline}`}>
+      <h1 className="absolute bottom-4 p-2 px-4 text-black bg-white text-xl font-bold">
         {headline}
-      </div>
+      </h1>
+      </Link>
     </div>
   );
 };

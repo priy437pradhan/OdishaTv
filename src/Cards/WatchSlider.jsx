@@ -62,14 +62,14 @@ const WatchSlider = () => {
 
         </div>
         <div className="relative h-full overflow-hidden">
-          {sliderData.map(({ imgSrc, imgAlt, linkHref, linkTitle, description }, index) => (
+          {sliderData.map(({ imgSrc, imgAlt,headline, description }, index) => (
             <div
               className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
               key={index}
             >
-              <Link to={linkHref} title={linkTitle}>
+                   <Link to={`/story/${headline}`}>
                 <img
                   src={imgSrc}
                   alt={imgAlt}
@@ -79,7 +79,7 @@ const WatchSlider = () => {
               </Link>
               <div className=" bg-white bg-opacity-90 p-1 shadow-sm">
                 <h3 className="text-sm leading-5 m-0 min-h-[60px] my-2 mx-2">
-                  <Link to={linkHref} title={linkTitle}>
+                <Link to={`/story/${headline}`}>
                     <strong className="text-xs text-white bg-red-600 p-1 rounded-sm uppercase font-bold">
                       Watch Live Coverage
                     </strong>

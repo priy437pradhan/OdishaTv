@@ -60,12 +60,24 @@ const Header = () => {
     <header className="w-full bg-white shadow-lg">
       <div className="hidden md:flex justify-between items-center bg-white border-b-2 p-2">
         <div className="flex space-x-4">
-          <img className="h-5 separator" src={facebook_img} alt="Facebook" />
-          <img className="h-5 separator" src={insta_img} alt="Instagram" />
-          <img className="h-5 separator" src={koko_img} alt="Koko" />
-          <img className="h-5 separator" src={twitter_img} alt="Twitter" />
-          <img className="h-5 separator" src={whatsapp_img} alt="WhatsApp" />
-          <img className="h-5" src={youtube_img} alt="YouTube" />
+        <Link to="#">
+        <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={facebook_img} alt="Facebook" />
+      </Link>
+      <Link to="#">
+        <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={insta_img} alt="Instagram" />
+      </Link>
+      <Link to="#">
+        <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={koko_img} alt="Koko" />
+      </Link>
+      <Link to="#">
+        <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={twitter_img} alt="Twitter" />
+      </Link>
+      <Link to="#">
+        <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={whatsapp_img} alt="WhatsApp" />
+      </Link>
+      <Link to="#">
+        <img className="h-5 hover:opacity-75 transition-opacity duration-300" src={youtube_img} alt="YouTube" />
+      </Link>
         </div>
         <div className="flex space-x-4 shadow-sm p-2">
           <FaSearch
@@ -85,11 +97,13 @@ const Header = () => {
           <span>{dateTime.toLocaleTimeString()}</span>
         </div>
         <div className="flex-grow flex justify-center items-center">
+        <Link to={`/`}>
           <img
             className="lg:h-20 md:h-16 sm:h-12 h-8 w-auto"
             src={logo}
             alt="Logo"
           />
+           </Link>
         </div>
 
         <div className="absolute bottom-5 right-20 flex items-center font-semibold text-gray-500 text-sm leading-5 uppercase hidden md:flex">
@@ -110,14 +124,14 @@ const Header = () => {
   className="flex justify-between items-center bg-white border-b-2 text-black py-1 px-2"
 >
   <div className="flex-1 flex lg:justify-center overflow-x-auto space-x-4">
-    <Link to="/" className="text-lg whitespace-nowrap hover:underline">
+    <Link to="/" className="text-lg whitespace-nowrap">
       <img src={white_logo} alt="White Logo" />
     </Link>
     {categories.map((category, index) => (
       <Link
         key={index}
         to={`/category/${category.name.toLowerCase()}`}
-        className="text-lg whitespace-nowrap hover:underline"
+        className="text-lg whitespace-nowrap"
       >
         {category.name}
       </Link>

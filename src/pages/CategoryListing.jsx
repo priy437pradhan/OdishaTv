@@ -52,29 +52,31 @@ const CategoryListing = () => {
 
   return (
     <div className="flex flex-wrap">
-      <div className="w-full md:w-9/12 p-4">
+      <div className="w-full md:w-9/12 p-4 border border-2 mb-4">
         <h1 className="text-2xl font-bold mb-4">
           {category.charAt(0).toUpperCase() + category.slice(1)} Listings
         </h1>
         <div className="space-y-4">
           {paginatedData.length > 0 ? (
             paginatedData.map(item => (
-              <div key={item.id} className="flex border rounded-sm overflow-hidden h-40">
+              <div key={item.id} className="flex border rounded-sm overflow-hidden p-2">
                 <Link to={`/story/${encodeURIComponent(item.title)}`} className="flex-shrink-0">
                   <img 
                     src={item.urlToImage} 
                     alt={item.title} 
-                    className="w-32 h-32 object-cover rounded-sm"
+                  className="w-32 h-32 object-cover rounded-sm hover:bg-blue-200 hover:scale-105 hover:shadow-lg transition-all duration-300"
                     style={{ aspectRatio: '1 / 1' }} 
                   />
                 </Link>
-                <div className="flex flex-col justify-between ml-4 p-3 flex-1">
+                <div className="flex flex-col justify-between ml-4 px-1 py-1 flex-1">
                   <div>
                     <Link to={`/story/${encodeURIComponent(item.title)}`}>
                       <h2 className="text-sm font-bold mb-2">{item.title}</h2>
                     </Link>
                   </div>
+                  <Link to={`/category/${category}`}>
                   <p className="text-gray-600 mt-auto">{item.category}</p>
+                  </Link>
                 </div>
               </div>
             ))
@@ -82,7 +84,7 @@ const CategoryListing = () => {
             <p>No listings available for this category.</p>
           )}
         </div>
-        <div className="flex justify-between items-center mt-4">
+        <div className="flex justify-between items-center mt-10">
           <button 
             onClick={handlePreviousPage} 
             disabled={currentPage === 1}

@@ -24,28 +24,21 @@
 body {
   @apply bg-gray-50 text-gray-900;
 }
-
-
-
-a:hover {
-  @apply text-blue-800;
+a{
+  @apply no-underline;
+}
+a:hover{
+  @apply no-underline;
 }
 
-button {
-  @apply bg-blue-500 text-white border border-transparent rounded-md shadow-sm;
-}
 
-button:hover {
-  @apply bg-blue-600;
-}
+
 
 input, textarea {
   @apply border-gray-300;
 }
 
-input:focus, textarea:focus {
-  @apply border-blue-500 ring-blue-500;
-}
+
 
 .card {
   @apply p-4 bg-white shadow-md rounded-md;
@@ -72,11 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark a {
-  @apply text-blue-400;
+  @apply text-white;
 }
 
 .dark a:hover {
-  @apply text-blue-300;
+  @apply text-gray-50;
+  text-decoration: none;
 }
 
 .dark button {
