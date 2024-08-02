@@ -13,13 +13,16 @@ const SearchData = () => {
     setSearchTerm(value);
 
     if (value.length >= 3) {
-      const filtered = sampleData
-        .filter((item) => item.category.toLowerCase().includes(value.toLowerCase()))
-        .slice(0, 3);
-      setFilteredData(filtered);
-    } else {
-      setFilteredData([]);
-    }
+        const filtered = sampleData
+          .filter((item) => 
+            item.category.toLowerCase().includes(value.toLowerCase()) ||
+            item.title.toLowerCase().includes(value.toLowerCase())
+          )
+          .slice(0, 3);
+        setFilteredData(filtered);
+      } else {
+        setFilteredData([]);
+      }
   };
 
   const toggleSearchInput = () => {
