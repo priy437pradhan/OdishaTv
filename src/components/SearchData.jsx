@@ -13,12 +13,14 @@ const SearchData = () => {
     setSearchTerm(value);
 
     if (value.length >= 3) {
-      const filtered = sampleData
-        .filter((item) => 
-          item.category.toLowerCase().includes(value.toLowerCase()) ||
-          item.title.toLowerCase().includes(value.toLowerCase())
-        )
-        .slice(0, 3);
+      const filtered = sampleData.filter((item) => {
+        const term = value.toLowerCase();
+        const isCategoryMatch = item.category.toLowerCase().includes(term);
+        const isTitleMatch = item.title.toLowerCase().includes(term);
+        
+        return isCategoryMatch || isTitleMatch;
+      }).slice(0, 3); // Limit results to the first 3 matches
+
       setFilteredData(filtered);
     } else {
       setFilteredData([]);
@@ -65,7 +67,14 @@ const SearchData = () => {
               <ul className="bg-white border border-gray-300 rounded mt-1">
                 {filteredData.map((item) => (
                   <li key={item.id} className="p-2 hover:bg-gray-100">
-                    <Link to={`/category/${item.category}`}>{item.category}</Link>
+                    <Link to={`/category/${item.category}`}>
+                      {item.category}
+                      {item.title && (
+                        <span className="block text-gray-600 text-sm">
+                          {item.title.length > 12 ? `${item.title.substring(0, 12)}...` : item.title}
+                        </span>
+                      )}
+                    </Link>
                   </li>
                 ))}
               </ul>
