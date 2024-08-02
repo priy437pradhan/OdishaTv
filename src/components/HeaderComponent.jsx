@@ -11,6 +11,7 @@ import whatsapp_img from "../assets/whatsapp.png";
 import youtube_img from "../assets/youtube.png";
 import white_logo from "../assets/logo-white.png";
 import DarkModeToggle from '../components/DarkModeToggle';
+import SearchData from "../components/SearchData";
 import "../App.css";
 
 
@@ -80,10 +81,7 @@ const Header = () => {
       </Link>
         </div>
         <div className="flex space-x-4 shadow-sm p-2">
-          <FaSearch
-            className="text-lg cursor-pointer hover:text-gray-300"
-            aria-label="Search"
-          />
+          <SearchData/>
           <FaBars
             className="text-lg cursor-pointer hover:text-gray-300"
             aria-label="Menu"
