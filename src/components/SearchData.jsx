@@ -19,7 +19,7 @@ const SearchData = () => {
         const isTitleMatch = item.title.toLowerCase().includes(term);
         
         return isCategoryMatch || isTitleMatch;
-      }).slice(0, 3); // Limit results to the first 3 matches
+      }).slice(0, 3); 
 
       setFilteredData(filtered);
     } else {

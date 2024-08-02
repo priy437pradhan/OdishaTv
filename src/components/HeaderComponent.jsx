@@ -12,6 +12,7 @@ import youtube_img from "../assets/youtube.png";
 import white_logo from "../assets/logo-white.png";
 import DarkModeToggle from '../components/DarkModeToggle';
 import SearchData from "../components/SearchData";
+import SearchItem from "../components/SearchItems";
 import "../App.css";
 
 
@@ -82,10 +83,7 @@ const Header = () => {
         </div>
         <div className="flex space-x-4 shadow-sm p-2">
           <SearchData/>
-          <FaBars
-            className="text-lg cursor-pointer hover:text-gray-300"
-            aria-label="Menu"
-          />
+          <SearchItem />
         </div>
       </div>
 
