@@ -128,7 +128,7 @@ const Header = () => {
         {category.name}
       </Link>
     ))}
-  <div className="flex h-18  items-center justify-center space-x-4 shadow-sm p-2 fixed top-0 right-0 z-[20]">
+  <div className="flex h-18 bg-white items-center justify-center space-x-4 shadow-sm p-1 fixed top-0 right-0 z-[20]">
           <SearchData/>
           <SearchItem />
     </div>

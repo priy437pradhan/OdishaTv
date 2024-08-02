@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const LiveNewsCard = ({ imageUrl, headline }) => {
+const LiveNewsCard = ({ imageSrc, headline }) => {
   const dotStyle = {
     width: '8px',
     height: '8px',
@@ -24,7 +24,7 @@ const LiveNewsCard = ({ imageUrl, headline }) => {
     <div className="relative w-full h-96">
       <Link to={`/story/${headline}`}>
       <img
-        src={imageUrl}
+        src={imageSrc}
         alt={headline}
         className="absolute inset-0 w-full h-84 object-cover"
       />
