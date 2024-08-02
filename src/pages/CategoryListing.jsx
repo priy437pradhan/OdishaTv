@@ -104,7 +104,7 @@ const CategoryListing = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-3/12 my-2 p-4">
+      <div className="w-full md:w-3/12 px-4">
         <h2 className="text-xl font-bold mb-4">Related Data</h2>
         <AdType1 />
         <div className='my-6'>

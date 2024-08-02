@@ -71,7 +71,7 @@ const SearchData = () => {
                       {item.category}
                       {item.title && (
                         <span className="block text-gray-600 text-sm">
-                          {item.title.length > 22 ? `${item.title.substring(0, 12)}...` : item.title}
+                          {item.title.length > 22 ? `${item.title.substring(0, 22)}...` : item.title}
                         </span>
                       )}
                     </Link>
