@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Header />
       <div className="flex-1 container mx-auto px-2 lg:px-32 mt-12">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading Please Wait...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/story/:title" element={<Story />} /> 

@@ -46,8 +46,8 @@ const SearchData = () => {
       />
       {showInput && (
         <div
-          className="absolute top-0 right-0 transform transition-transform duration-300"
-          style={{ width: '200px', transform: showInput ? 'translateX(0)' : 'translateX(200px)' }}
+          className="absolute right-0 transform transition-transform duration-300"
+          style={{top:'-8px', width: '200px', transform: showInput ? 'translateX(0)' : 'translateX(200px)' }}
         >
           <div className="relative">
             <input
@@ -71,7 +71,7 @@ const SearchData = () => {
                       {item.category}
                       {item.title && (
                         <span className="block text-gray-600 text-sm">
-                          {item.title.length > 12 ? `${item.title.substring(0, 12)}...` : item.title}
+                          {item.title.length > 22 ? `${item.title.substring(0, 12)}...` : item.title}
                         </span>
                       )}
                     </Link>

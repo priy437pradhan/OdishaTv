@@ -2,7 +2,7 @@ import React from 'react';
 
 const AdType1 = () => {
   return (
-    <div className="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-full" style={{height:250}}>
+    <div className="border text-black p-6 rounded-lg shadow-sm w-full" style={{height:250}}>
       <h2 className="text-2xl font-bold mb-4">Add Type </h2>
       <p className="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, asperiores.</p>
       <button className="bg-white text-blue-500 font-semibold px-4 py-2 rounded">Learn More</button>

@@ -56,7 +56,7 @@ const WatchSlider = () => {
     };
   
     return (
-      <div className="relative mb-4 h-80 shadow-md" >
+      <div className="relative bg-white mb-4 h-80 shadow-md" >
         <div className="p-2">
         <HeadingComponent title="watch" />
 

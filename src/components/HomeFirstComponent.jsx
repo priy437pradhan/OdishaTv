@@ -117,7 +117,7 @@ const NewsList = () => {
             ))}
           </div>
           <div className="grid grid-cols-[8fr_4fr] gap-4 py-2">
-            <div className="flex flex-col shadow-md">
+            <div className="flex flex-col bg-white  shadow-md">
               {singleCardItem.slice(0, 3).map((story) => (
                 <div key={story.id} className="p-2 w-full">
                   <SingleCard
@@ -156,7 +156,7 @@ const NewsList = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-md">
+            <div className="flex flex-col bg-white shadow-md">
               {singleCardItem.slice(0, 3).map((story) => (
                 <div key={story.id} className="p-2 w-full">
                   <SingleCard

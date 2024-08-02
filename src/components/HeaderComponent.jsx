@@ -81,7 +81,7 @@ const Header = () => {
         <img className="h-5 hover:opacity-75 transition-opacity duration-300" src={youtube_img} alt="YouTube" />
       </Link>
         </div>
-        <div className="flex space-x-4 shadow-sm p-2">
+        <div className="flex h-18 items-center justify-center space-x-4 shadow-sm p-2">
           <SearchData/>
           <SearchItem />
         </div>
