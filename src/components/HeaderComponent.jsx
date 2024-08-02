@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/LOGO.png";
-// import darkmode_img from "../assets/dark-mode.png";
 import facebook_img from "../assets/facebook-bn.png";
 import insta_img from "../assets/insta.png";
 import koko_img from "../assets/Koko.png";
@@ -81,10 +80,7 @@ const Header = () => {
         <img className="h-5 hover:opacity-75 transition-opacity duration-300" src={youtube_img} alt="YouTube" />
       </Link>
         </div>
-        <div className="flex h-18 items-center justify-center space-x-4 shadow-sm p-2">
-          <SearchData/>
-          <SearchItem />
-        </div>
+        
       </div>
 
       <div className="relative bg-white flex justify-center border-b-2 py-4">
@@ -95,7 +91,7 @@ const Header = () => {
         <div className="flex-grow flex justify-center items-center">
         <Link to={`/`}>
           <img
-            className="lg:h-20 md:h-16 sm:h-12 h-8 w-auto"
+           className="lg:h-20 md:h-16 sm:h-12 sm:flex sm:justify-start sm:align-top h-8 w-auto"
             src={logo}
             alt="Logo"
           />
@@ -117,9 +113,9 @@ const Header = () => {
 
       <div
   id="third-row"
-  className="flex justify-between items-center bg-white border-b-2 text-black py-1 px-2"
+  className="flex justify-between items-center h-18 bg-white border-b-2 text-black py-1 px-2"
 >
-  <div className="flex-1 flex lg:justify-center overflow-x-auto space-x-4">
+  <div className="relative flex-1 flex lg:justify-center overflow-x-auto space-x-4">
     <Link to="/" className="text-lg whitespace-nowrap">
       <img src={white_logo} alt="White Logo" />
     </Link>
@@ -132,6 +128,10 @@ const Header = () => {
         {category.name}
       </Link>
     ))}
+  <div className="flex h-18  items-center justify-center space-x-4 shadow-sm p-2 fixed top-0 right-0 z-[20]">
+          <SearchData/>
+          <SearchItem />
+    </div>
   </div>
 </div>
     </header>

@@ -40,7 +40,7 @@ const SearchData = () => {
   return (
     <div className="relative z-50">
       <FaSearch
-        className="text-lg cursor-pointer hover:text-gray-300"
+        className="text-lg cursor-pointer text-black hover:text-gray-300"
         aria-label="Search"
         onClick={toggleSearchInput}
       />
@@ -58,7 +58,7 @@ const SearchData = () => {
               placeholder="Search categories..."
             />
             <FaTimes
-              className="absolute right-2 top-2 text-gray-400 cursor-pointer hover:text-gray-600"
+              className="absolute text-black right-2 top-2 cursor-pointer hover:text-gray-600"
               onClick={handleClose}
             />
           </div>
@@ -66,16 +66,16 @@ const SearchData = () => {
             filteredData.length > 0 ? (
               <ul className="bg-white border border-gray-300 rounded mt-1">
                 {filteredData.map((item) => (
-                  <li key={item.id} className="p-2 hover:bg-gray-100">
                     <Link to={`/category/${item.category}`}>
+                  <li key={item.id} className="p-2 hover:bg-gray-100">
                       {item.category}
                       {item.title && (
                         <span className="block text-gray-600 text-sm">
                           {item.title.length > 22 ? `${item.title.substring(0, 22)}...` : item.title}
                         </span>
                       )}
-                    </Link>
                   </li>
+                    </Link>
                 ))}
               </ul>
             ) : (

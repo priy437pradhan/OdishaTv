@@ -18,7 +18,7 @@ const CategoryMenuData = () => {
   return (
     <div className="relative">
       <FaBars
-        className="text-2xl cursor-pointer hover:text-gray-600 transition duration-300 ease-in-out"
+        className="text-2xl cursor-pointer text-black hover:text-gray-600 transition duration-300 ease-in-out"
         aria-label="Menu"
         onClick={toggleMenu}
       />
@@ -29,7 +29,7 @@ const CategoryMenuData = () => {
           style={{ height: '100vh' }}
         >
           <FaTimes
-            className="absolute top-4 right-4 text-2xl cursor-pointer hover:text-gray-600 transition duration-300 ease-in-out"
+            className="absolute top-4 right-4 text-black text-2xl cursor-pointer hover:text-gray-600 transition duration-300 ease-in-out"
             aria-label="Close"
             onClick={toggleMenu}
           />
