@@ -13,16 +13,16 @@ const SearchData = () => {
     setSearchTerm(value);
 
     if (value.length >= 3) {
-        const filtered = sampleData
-          .filter((item) => 
-            item.category.toLowerCase().includes(value.toLowerCase()) ||
-            item.title.toLowerCase().includes(value.toLowerCase())
-          )
-          .slice(0, 3);
-        setFilteredData(filtered);
-      } else {
-        setFilteredData([]);
-      }
+      const filtered = sampleData
+        .filter((item) => 
+          item.category.toLowerCase().includes(value.toLowerCase()) ||
+          item.title.toLowerCase().includes(value.toLowerCase())
+        )
+        .slice(0, 3);
+      setFilteredData(filtered);
+    } else {
+      setFilteredData([]);
+    }
   };
 
   const toggleSearchInput = () => {
@@ -60,14 +60,20 @@ const SearchData = () => {
               onClick={handleClose}
             />
           </div>
-          {filteredData.length > 0 && (
-            <ul className="bg-white border border-gray-300 rounded mt-1">
-              {filteredData.map((item) => (
-                <li key={item.id} className="p-2 hover:bg-gray-100">
-                  <Link to={`/category/${item.category}`}>{item.category}</Link>
-                </li>
-              ))}
-            </ul>
+          {searchTerm.length >= 3 && (
+            filteredData.length > 0 ? (
+              <ul className="bg-white border border-gray-300 rounded mt-1">
+                {filteredData.map((item) => (
+                  <li key={item.id} className="p-2 hover:bg-gray-100">
+                    <Link to={`/category/${item.category}`}>{item.category}</Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="bg-white border border-gray-300 rounded mt-1 p-2 text-gray-600">
+                No matches found
+              </div>
+            )
           )}
         </div>
       )}
