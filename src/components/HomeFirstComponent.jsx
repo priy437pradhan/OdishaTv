@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import SingleCard from '../Cards/SingleCard';
-import LiveNewsCard from '../Cards/LiveNewsCard';
-import WatchSlider from '../Cards/WatchSlider';
-import LiveSubCardOne from '../Cards/LiveSubCardOne';
-import { AdType1 } from '../Cards/Advertisement';
-import CardOne from '../Cards/CardOne';
-import Opinion from '../Cards/OpinionCard';
+import SingleCard from '../cards/SingleCard';
+import LiveNewsCard from '../cards/LiveNewsCard';
+import WatchSlider from '../cards/WatchSlider';
+import LiveSubCardOne from '../cards/LiveSubCardOne';
+import { AdType1 } from '../cards/Advertisement';
+import CardOne from '../cards/CardOne';
+import Opinion from '../cards/OpinionCard';
 import { HeadingComponent2 } from './HeadingComponent';
-import CardTwo from '../Cards/CardTwo';
-import CardThree from '../Cards/CardThree';
-import WebStoryCard from '../Cards/WebstoryComponent';
+import CardTwo from '../cards/CardTwo';
+import CardThree from '../cards/CardThree';
+import WebStoryCard from '../cards/WebstoryComponent';
+import ViralCard from '../cards/ViralCard';
 import sampleData from '../lib/sampleData';
 
 const NewsList = () => {
@@ -26,6 +27,7 @@ const NewsList = () => {
   const [singleCardItemOne, setSingleCardItemOne] = useState([]);
   const [singleCardItemTwo, setSingleCardItemTwo] = useState([]);
   const [opiniondata, setOpinionData] = useState([]);
+  const [ViralCarddata, setViralCardData] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -55,6 +57,7 @@ const NewsList = () => {
         setSingleCardItemTwo(getSectionData('singleCardItemTwo_card')); 
         setLiveNewsItem(getSectionData('liveNewsItem_card'));
         setOpinionData(getSectionData('opiniondata_card'));
+        setViralCardData(getSectionData('ViralCardData_card'));
 
         // const liveNewsData = getSectionData('liveNewsItem_card');
         // const singleCardOneData = getSectionData('singleCardItemOne_card');
@@ -236,6 +239,17 @@ const NewsList = () => {
         {Mainstories.map((story) => (
           <div key={story.id}>
             <WebStoryCard
+              headline={story.headline}
+              imageSrc={story.imageSrc}
+              link={`/story/${story.id}`}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="grid my-2 grid-cols-6 gap-4">
+        {ViralCarddata.map((story) => (
+          <div key={story.id}>
+            <ViralCard
               headline={story.headline}
               imageSrc={story.imageSrc}
               link={`/story/${story.id}`}

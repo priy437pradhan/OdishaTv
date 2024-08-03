@@ -29,7 +29,6 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
         className="absolute inset-0 w-full h-84 object-cover"
       />
       </Link>
-      {/* <div className="absolute inset-0 bg-gradient-to-t h-96 from-black opacity-50"></div> */}
       <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold flex items-center">
         <span style={dotStyle}></span>
         LIVE
