@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function SingleCard({ imageUrl, headline, isLast, id }) {
+function SingleCard({ imageSrc, headline, isLast, id }) {
     return (
         <div className="max-w-sm  pb-2 flex flex-col">
             <div className={`flex w-full h-full p-1 ${isLast ? '' : 'border-b-2'}`}>
@@ -14,7 +14,7 @@ function SingleCard({ imageUrl, headline, isLast, id }) {
                     <Link to={`/story/${headline}`}>
                         <img
                             alt={headline}
-                            src={imageUrl}
+                            src={imageSrc}
                             className="w-full h-14 object-cover rounded-sm"
                         />
                     </Link>

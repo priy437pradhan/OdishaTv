@@ -10,11 +10,13 @@ import { HeadingComponent2 } from './HeadingComponent';
 import CardTwo from '../cards/CardTwo';
 import CardThree from '../cards/CardThree';
 import WebStoryCard from '../cards/WebstoryComponent';
-import ViralCard from '../cards/ViralCard';
 import sampleData from '../lib/sampleData';
+import ViralCard from '../cards/ViralCard';
+import DailyShowCard from '../cards/DailyShowCard';
+import VideoCard from '../cards/VideoCard';
+import PhotoCard from '../cards/VideoCard';
 
 const NewsList = () => {
-  const [WatchItem, setWatchItem] = useState([]);
   const [SpotLightNewsItem, setSpotLightNewsItem] = useState([]);
   const [liveNewsItem, setLiveNewsItem] = useState([]);
   const [Topstories, setTopStories] = useState([]);
@@ -28,6 +30,9 @@ const NewsList = () => {
   const [singleCardItemTwo, setSingleCardItemTwo] = useState([]);
   const [opiniondata, setOpinionData] = useState([]);
   const [ViralCarddata, setViralCardData] = useState([]);
+  const [DailyShowCarddata, setDailyShowCardData] = useState([]);
+  const [VideoCarddata, setVideoCardData] = useState([]);
+  const [PhotoCarddata, setPhotoCardData] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -41,10 +46,10 @@ const NewsList = () => {
             headline: article.title,
             imageSrc: article.urlToImage,
             category: article.category,
+            description: article.description,
           }));
         };
 
-        setWatchItem(getSectionData('watch_card'));
         setSpotLightNewsItem(getSectionData('SpotLight_card'));
         setTopStories(getSectionData('Topstories_card'));
         setFirstStories(getSectionData('FirstStories_card'));
@@ -58,18 +63,10 @@ const NewsList = () => {
         setLiveNewsItem(getSectionData('liveNewsItem_card'));
         setOpinionData(getSectionData('opiniondata_card'));
         setViralCardData(getSectionData('ViralCardData_card'));
+        setDailyShowCardData(getSectionData('DailyShowCard_card'));
+        setVideoCardData(getSectionData('Video_card'));
+        setPhotoCardData(getSectionData('Photo_card'));
 
-        // const liveNewsData = getSectionData('liveNewsItem_card');
-        // const singleCardOneData = getSectionData('singleCardItemOne_card');
-        // const singleCardTwoData = getSectionData('singleCardItemTwo_card');
-
-        // console.log('Live News Data:', liveNewsData);
-        // console.log('Single Card One Data:', singleCardOneData);
-        // console.log('Single Card Two Data:', singleCardTwoData);
-
-        // setLiveNewsItem(liveNewsData);
-        // setSingleCardItemOne(singleCardOneData);
-        // setSingleCardItemTwo(singleCardTwoData);
 
       } catch (error) {
         setError('Error fetching news data');
@@ -122,6 +119,7 @@ const NewsList = () => {
                   <LiveSubCardOne
                     headline={liveNews.headline}
                     imageSrc={liveNews.imageSrc}
+                    category={liveNews.category}
                   />
                 </div>
               ))}
@@ -143,7 +141,7 @@ const NewsList = () => {
                   <div key={story.id} className="p-2 w-full">
                     <SingleCard
                       headline={story.headline}
-                      imageUrl={story.imageSrc}
+                      imageSrc={story.imageSrc}
                       isLast={story.id === singleCardItemOne[singleCardItemOne.length - 1].id}
                     />
                   </div>
@@ -182,7 +180,7 @@ const NewsList = () => {
                   <div key={story.id} className="p-2 w-full">
                     <SingleCard
                       headline={story.headline}
-                      imageUrl={story.imageSrc}
+                      imageSrc={story.imageSrc}
                       isLast={story.id === singleCardItemTwo[singleCardItemTwo.length - 1].id}
                       id={story.id}
                     />
@@ -246,6 +244,9 @@ const NewsList = () => {
           </div>
         ))}
       </div>
+      <div className="mx-1 w-full my-5">
+        <HeadingComponent2 title="Viral News" />
+      </div>
       <div className="grid my-2 grid-cols-6 gap-4">
         {ViralCarddata.map((story) => (
           <div key={story.id}>
@@ -257,6 +258,55 @@ const NewsList = () => {
           </div>
         ))}
       </div>
+      <div className="mx-1 w-full my-5">
+        <HeadingComponent2 title="Daily Shows" />
+      </div>
+      <div className="grid my-2 grid-cols-3 gap-4">
+        {DailyShowCarddata.map((story) => (
+          <div key={story.id}>
+            <DailyShowCard                          
+              headline={story.headline}
+              imageSrc={story.imageSrc}
+              link={`/story/${story.id}`}
+              description ={story.description}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex my-5 gap-4">
+      <div className="grid my-2 w-1/2 shadow-md" >
+      <div className="mx-2 my-2">
+        <HeadingComponent2 title="Videos" />
+      </div>
+      
+        {VideoCarddata.map((story) => (
+          <div key={story.id}>
+            <VideoCard                          
+              headline={story.headline}
+              imageSrc={story.imageSrc}
+              link={`/story/${story.id}`}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="grid my-2 w-1/2 shadow-md" >
+      <div className="mx-2 my-2">
+        <HeadingComponent2 title="Photo" />
+      </div>
+      
+        {PhotoCarddata.map((story) => (
+          <div key={story.id}>
+            <PhotoCard                          
+              headline={story.headline}
+              imageSrc={story.imageSrc}
+              link={`/story/${story.id}`}
+            />
+          </div>
+        ))}
+      </div>
+      
+      </div>
+      
     </div>
   );
 };

@@ -13,11 +13,11 @@ const LiveSubCardOne =({ headline, imageSrc, category })  => {
           />
         </Link>
         <Link to="/id" title={headline}>
-          <h2 className="text-black text-md font-bold px-2 pt-4 pb-2 h-24 overflow-hidden">{headline}</h2>
+          <h2 className="text-black text-md font-bold px-2 pt-4 pb-2 h-16 overflow-hidden">{headline}</h2>
         </Link>
-        <ul className="px-4">
+        <ul className="px-2">
           <li className="list-none text-xs text-gray-700 uppercase">
-            <Link to={`/story/${headline}`} title={category} className="text-blue-700 font-semibold">
+            <Link to={`/category/${category}`} title={category} className="font-semibold">
               {category}
             </Link>
           </li>

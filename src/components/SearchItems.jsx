@@ -40,7 +40,7 @@ const CategoryMenuData = () => {
               {uniqueCategories.map(item => (
                 <li 
                   key={item.category} 
-                  className="border-b border-gray-200 hover:bg-gray-100 transition duration-300 ease-in-out"
+                  className="border-b border-gray-200 transition duration-300 ease-in-out dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500"
                 >
                   <Link
                     to={`/category/${item.category}`}
