@@ -8,7 +8,7 @@ const DailyShowCard = ({ headline, imageSrc, description,id }) => {
        
         <div className="row flex flex-wrap -mx-2">
             <div className="w-full  px-2 mb-4" key={id}>
-              <div className="bg-white rounded-t-md overflow-hidden shadow-md">
+              <div className="bg-white rounded-t-sm overflow-hidden shadow-md">
                 <Link to={`/story/${headline}`} title="otv">
                   <img
                     src={imageSrc}

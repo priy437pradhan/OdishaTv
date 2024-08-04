@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const OpinionCard = ({ headline, imageSrc, category, isLast }) => {
   return (
     <div
-      className={`relative pl-32 h-24 inline-block  w-1/4 ${
+      className={`relative pr-2 pl-32 h-24 inline-block  w-1/4 ${
         !isLast ? "border-r border-gray-300" : ""
       }`}
     >

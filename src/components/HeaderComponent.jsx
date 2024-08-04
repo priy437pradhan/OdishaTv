@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaSearch, FaBars } from "react-icons/fa";
+// import { FaSearch, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/LOGO.png";
 import facebook_img from "../assets/facebook-bn.png";
