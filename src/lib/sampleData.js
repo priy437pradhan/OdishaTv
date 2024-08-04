@@ -120,18 +120,18 @@ export const sampleData = [
 export const newsArticles = [
   {
     id: 1,
-    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?",
-    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/hardik_pant_rohit_1719304368799_1719304379631.jpg"
+    title: "Photo 1",
+    urlToImage: Img
   },
   {
     id: 2,
-    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?22",
-    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/Congress-leader-and-MP-Rahul-Gandhi--File-Photo-_1718886042847_1719295552589.jpg"
+    title: "Photo 2",
+    urlToImage: Img
   },
   {
     id: 3,
-    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?22",
-    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/Congress-leader-and-MP-Rahul-Gandhi--File-Photo-_1718886042847_1719295552589.jpg"
+    title: "Photo 3",
+    urlToImage: Img
   }
 ];
 
@@ -139,54 +139,54 @@ export const photos = [
   {
     id: 1,
     title: "Photo 1",
-    image: "https://via.placeholder.com/300"
+    urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 2,
     title: "Photo 2",
-    image: "https://via.placeholder.com/300"
+    urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 3,
     title: "Photo 3",
-    image: "https://via.placeholder.com/300"
+    urlToImage: "https://via.placeholder.com/300"
   }
 ];
 
 export const videos = [
   {
     id: 1,
-    title: "Video 1",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    title: "Photo 1",
+    urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 2,
-    title: "Video 2",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    title: "Photo 2",
+    urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 3,
-    title: "Video 3",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    title: "Photo 3",
+    urlToImage: "https://via.placeholder.com/300"
   }
 
   
 ];
 export const Forhome = [
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
   },
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
   },
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
@@ -198,35 +198,35 @@ export const ForProfile = [
   {
     id: 1,
     title: "Video 1",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    urlToImage: Img
   },
   {
     id: 2,
     title: "Video 2",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    urlToImage: Img
   },
   {
     id: 3,
     title: "Video 3",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    urlToImage: Img
   }
   
 ];
 export const ForcontactData = [
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
   },
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
   },
   {
-    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgSrc: Img,
     imgAlt: 'Vashu Bhagnani',
     imgTitle: 'Vashu Bhagnani',
     title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',

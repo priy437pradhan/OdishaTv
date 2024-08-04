@@ -12,7 +12,7 @@ const getSectionData = (sectionName) => {
   return data[sectionName]?.map(article => ({
     id: article.id,
     headline: article.title,
-    imageSrc: article.image,
+    imageSrc: article.urlToImage,
     category: article.category,
     description: article.description,
     url: article.url
@@ -54,9 +54,9 @@ const PhotoCard = ({ photo }) => (
 const VideoCard = ({ video }) => (
   <div key={video.id} className="bg-white border rounded-lg overflow-hidden">
     <Link to={`/story/${video.id}`} className="block">
+    <img src={video.imageSrc} alt={video.headline} className="w-full h-52 object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold">{video.headline}</h3>
-        <Link to={video.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Watch Video</Link>
       </div>
     </Link>
   </div>
