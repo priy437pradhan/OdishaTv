@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import sampleData from '../lib/sampleData';
 import { AdType1 } from '../cards/Advertisement';
+
 import CardOne from '../cards/CardOne';
 
 const ITEMS_PER_PAGE = 5;
