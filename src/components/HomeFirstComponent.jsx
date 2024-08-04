@@ -78,10 +78,9 @@ console.error('Error fetching news data:', error);
 fetchData();
 }, []);
 if (error) {
-return 
-<div>{error}</div>
-;
+  return <div>{error}</div>;
 }
+
 return (
 <div>
    <div className="grid grid-cols-1 lg:grid-cols-[3fr_6fr_3fr] gap-6 px-4 lg:px-0">
