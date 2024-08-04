@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sampleData from '../lib/sampleData';
 import { HeadingComponent2 } from './HeadingComponent';
-import { AdType1 } from '../cards/Advertisement';
 import SingleCard from '../cards/SingleCard';
 import LiveNewsCard from '../cards/LiveNewsCard';
 import WatchSlider from '../cards/WatchSlider';
@@ -17,8 +16,8 @@ import VideoCard from '../cards/VideoCard';
 import PhotoCard from '../cards/VideoCard';
 import VideoSubCard from '../cards/VideoSubCard';
 import PhotoSubCard from '../cards/VideoSubCard';
-import CricketNews from '../cards/CricketNews'
-;
+import CricketNews from '../cards/CricketNews';
+import { AdType1 } from '../cards/Advertisement';
 const NewsList = () => {
 const [SpotLightNewsItem, setSpotLightNewsItem] = useState([]);
 const [liveNewsItem, setLiveNewsItem] = useState([]);
