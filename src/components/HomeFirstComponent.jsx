@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import sampleData from '../lib/sampleData';
 import { HeadingComponent2 } from './HeadingComponent';
-import SingleCard from '../cards/SingleCard';
-import LiveNewsCard from '../cards/LiveNewsCard';
-import WatchSlider from '../cards/WatchSlider';
-import LiveSubCardOne from '../cards/LiveSubCardOne';
-import CardOne from '../cards/CardOne';
-import Opinion from '../cards/OpinionCard';
-import CardTwo from '../cards/CardTwo';
-import CardThree from '../cards/CardThree';
-import WebStoryCard from '../cards/WebstoryComponent';
-import ViralCard from '../cards/ViralCard';
-import DailyShowCard from '../cards/DailyShowCard';
-import VideoCard from '../cards/VideoCard';
-import PhotoCard from '../cards/VideoCard';
-import VideoSubCard from '../cards/VideoSubCard';
-import PhotoSubCard from '../cards/VideoSubCard';
-import CricketNews from '../cards/CricketNews';
-import { AdType1 } from '../cards/Advertisement';
+import SingleCard from '../Cards/SingleCard';
+import LiveNewsCard from '../Cards/LiveNewsCard';
+import WatchSlider from '../Cards/WatchSlider';
+import LiveSubCardOne from '../Cards/LiveSubCardOne';
+import CardOne from '../Cards/CardOne';
+import Opinion from '../Cards/OpinionCard';
+import CardTwo from '../Cards/CardTwo';
+import CardThree from '../Cards/CardThree';
+import WebStoryCard from '../Cards/WebstoryComponent';
+import ViralCard from '../Cards/ViralCard';
+import DailyShowCard from '../Cards/DailyShowCard';
+import VideoCard from '../Cards/VideoCard';
+import PhotoCard from '../Cards/VideoCard';
+import VideoSubCard from '../Cards/VideoSubCard';
+import PhotoSubCard from '../Cards/VideoSubCard';
+// import CricketNews from '../Cards/CricketNews';
+import { AdType1 } from '../Cards/Advertisement';
+import CricketNews from '../Cards/CricketNews';
+
 const NewsList = () => {
+
 const [SpotLightNewsItem, setSpotLightNewsItem] = useState([]);
 const [liveNewsItem, setLiveNewsItem] = useState([]);
 const [Topstories, setTopStories] = useState([]);
