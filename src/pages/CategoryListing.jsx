@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import sampleData from '../lib/sampleData';
-import CardOne from '../cards/CardOne';
-import { AdType1 } from '../cards/Advertisement';
+// import CardOne from '../cards/CardOne';
+// import { AdType1 } from '../cards/Advertisement';
 
 const ITEMS_PER_PAGE = 5;
 
@@ -52,7 +52,7 @@ const CategoryListing = () => {
 
   return (
     <div className="flex flex-wrap">
-      <div className="w-full md:w-9/12 p-4 border border-2 mb-4">
+      <div className="w-full md:w-9/12 p-4  border-2 mb-4">
         <h1 className="text-2xl font-bold mb-4">
           {category.charAt(0).toUpperCase() + category.slice(1)} Listings
         </h1>
@@ -104,7 +104,7 @@ const CategoryListing = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-3/12 px-4">
+      {/* <div className="w-full md:w-3/12 px-4">
         <h2 className="text-xl font-bold mb-4">Related Data</h2>
         <AdType1 />
         <div className='my-6'>
@@ -121,7 +121,7 @@ const CategoryListing = () => {
         ))}
         </div>
         <AdType1 />
-      </div>
+      </div> */}
     </div>
   );
 };
