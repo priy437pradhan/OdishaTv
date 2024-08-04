@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import sampleData from '../lib/sampleData';
-import { AdType1 } from '../cards/Advertisement';
+// import { AdType1 } from '../cards/Advertisement';
 
 import CardOne from '../cards/CardOne';
 
@@ -107,7 +107,7 @@ const CategoryListing = () => {
       </div>
       <div className="w-full md:w-3/12 px-4">
         <h2 className="text-xl font-bold mb-4">Related Data</h2>
-        <AdType1 />
+        {/* <AdType1 /> */}
         <div className='my-6'>
           <h3 className="text-xl font-bold mb-2">Latest News</h3>
         
@@ -121,7 +121,7 @@ const CategoryListing = () => {
           />
         ))}
         </div>
-        <AdType1 />
+        {/* <AdType1 /> */}
       </div>
     </div>
   );
