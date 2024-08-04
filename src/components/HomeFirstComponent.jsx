@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import sampleData from '../lib/sampleData';
+import { sampleData } from '../lib/sampleData';
 import { HeadingComponent2 } from './HeadingComponent';
 import SingleCard from '../Cards/SingleCard';
 import LiveNewsCard from '../Cards/LiveNewsCard';
@@ -16,9 +16,9 @@ import VideoCard from '../Cards/VideoCard';
 import PhotoCard from '../Cards/VideoCard';
 import VideoSubCard from '../Cards/VideoSubCard';
 import PhotoSubCard from '../Cards/VideoSubCard';
-// import CricketNews from '../Cards/CricketNews';
-import { AdType1 } from '../Cards/Advertisement';
 import CricketNews from '../Cards/CricketNews';
+import SectionFor from '../Cards/SectionFor';
+import { AdType1 } from '../Cards/Advertisement';
 
 const NewsList = () => {
 
@@ -41,6 +41,7 @@ const [VideoSubCarddata, setVideoSubCardData] = useState([]);
 const [PhotoCarddata, setPhotoCardData] = useState([]);
 const [PhotoSubCarddata, setPhotoSubCardData] = useState([]);
 const [error, setError] = useState(null);
+
 useEffect(() => {
 const fetchData = () => {
 try {
@@ -281,6 +282,8 @@ return (
          ))}
       </div>
    </div>
+    <CricketNews />
+   <SectionFor />
    <div className="flex mb-4 gap-5">
       <div className="grid  w-1/2" >
          <div className='mb-4 mx-2'>
@@ -311,6 +314,7 @@ return (
             </div>
          </div>
       </div>
+      
       <div className="grid  w-1/2" >
          <div className='mb-4 mx-2'>
             <HeadingComponent2 title="Photo" />
@@ -341,7 +345,8 @@ return (
          </div>
       </div>
    </div>
-   <CricketNews />
+   
+  
 </div>
 );
 };

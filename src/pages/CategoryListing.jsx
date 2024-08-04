@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import sampleData from '../lib/sampleData';
+import { sampleData } from '../lib/sampleData';
 import {AdType1} from '../Cards/Advertisement';
 import CardOne from '../Cards/CardOne';
 

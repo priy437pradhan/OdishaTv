@@ -1,6 +1,6 @@
 import Img from '../assets/testing.jpg';
 
-const sampleData = [
+export const sampleData = [
   { id: 1, title: 'Global Political Shift', urlToImage: Img, category: 'World', section: 'watch_card' },
   { id: 2, title: 'Climate Change Impact', urlToImage: Img, category: 'World', section: 'watch_card' },
   { id: 3, title: 'World Economy Trends', urlToImage: Img, category: 'World', section: 'watch_card' },
@@ -116,4 +116,123 @@ const sampleData = [
   { id: 99, title: 'Entertainment Awards', urlToImage: Img, category: 'Entertainment', section: 'Awards' },
 ];
 
-export default sampleData;
+
+export const newsArticles = [
+  {
+    id: 1,
+    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?",
+    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/hardik_pant_rohit_1719304368799_1719304379631.jpg"
+  },
+  {
+    id: 2,
+    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?22",
+    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/Congress-leader-and-MP-Rahul-Gandhi--File-Photo-_1718886042847_1719295552589.jpg"
+  },
+  {
+    id: 3,
+    title: "Go First Insolvency: What Should The Airline Do Next to The Highway?22",
+    image: "https://www.hindustantimes.com/ht-img/img/2024/06/25/148x111/Congress-leader-and-MP-Rahul-Gandhi--File-Photo-_1718886042847_1719295552589.jpg"
+  }
+];
+
+export const photos = [
+  {
+    id: 1,
+    title: "Photo 1",
+    image: "https://via.placeholder.com/300"
+  },
+  {
+    id: 2,
+    title: "Photo 2",
+    image: "https://via.placeholder.com/300"
+  },
+  {
+    id: 3,
+    title: "Photo 3",
+    image: "https://via.placeholder.com/300"
+  }
+];
+
+export const videos = [
+  {
+    id: 1,
+    title: "Video 1",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id: 2,
+    title: "Video 2",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id: 3,
+    title: "Video 3",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  }
+
+  
+];
+export const Forhome = [
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  
+  
+];
+export const ForProfile = [
+  {
+    id: 1,
+    title: "Video 1",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id: 2,
+    title: "Video 2",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id: 3,
+    title: "Video 3",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  }
+  
+];
+export const ForcontactData = [
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  {
+    imgSrc: 'https://www.hindustantimes.com/ht-img/img/2024/06/25/550x309/vashu_bhhagnani_1719301155914_1719301162813.jpeg',
+    imgAlt: 'Vashu Bhagnani',
+    imgTitle: 'Vashu Bhagnani',
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
+  },
+  
+];
+
+
+export default { sampleData, newsArticles, photos, videos,Forhome, ForProfile, ForcontactData};

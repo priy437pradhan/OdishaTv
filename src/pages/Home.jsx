@@ -1,11 +1,13 @@
-import React from 'react'
-import HomeFirstComponent from '../components/HomeFirstComponent'
+import React, { Suspense } from 'react';
+
+const HomeFirstComponent = React.lazy(() => import('../components/HomeFirstComponent'));
+
 function Home() {
   return (
-    <>
-   < HomeFirstComponent />
-   </>
-  )
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeFirstComponent />
+    </Suspense>
+  );
 }
 
-export default Home
+export default Home;

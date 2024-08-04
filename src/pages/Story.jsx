@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import sampleData from '../lib/sampleData'; 
+import {sampleData } from '../lib/sampleData'; 
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const StoryPage = () => {

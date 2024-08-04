@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CardOne = ({ headline, imageSrc, category,id }) => {
+const CardOne = ({ headline, imageSrc, category }) => {
   return (
     <div className="py-4 flex pr-4 h-28">
       <div className="w-2/5 h-24">

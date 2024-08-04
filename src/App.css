@@ -119,4 +119,25 @@ h1, h2, h3, h4, h5, h6 {
   @apply bg-gray-800;
 }
 
+/* In your global CSS file or a Tailwind component-specific CSS file */
+
+.nav.section-tab-menu {
+  @apply overflow-x-auto whitespace-nowrap;
+}
+
+.nav.section-tab-menu::-webkit-scrollbar {
+  @apply w-0 h-0;
+}
+
+.nav.section-tab-menu::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+}
+
+.nav.section-tab-menu::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+.st-card-eleven img {
+  @apply object-cover;
+}
 
