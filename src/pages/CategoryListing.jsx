@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import sampleData from '../lib/sampleData';
-import { AdType1 } from '../cards/Advertisement';
-import CardOne from '../cards/CardOne';
 // import { AdType1 } from '../cards/Advertisement';
-
 // import CardOne from '../cards/CardOne';
+
 
 const ITEMS_PER_PAGE = 5;
 
@@ -107,7 +105,7 @@ const CategoryListing = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-3/12 px-4">
+      {/* <div className="w-full md:w-3/12 px-4">
         <h2 className="text-xl font-bold mb-4">Related Data</h2>
         <AdType1 />
         <div className='my-6'>
@@ -124,7 +122,7 @@ const CategoryListing = () => {
         ))}
         </div>
         <AdType1 />
-      </div>
+      </div> */}
     </div>
   );
 };
