@@ -28,9 +28,30 @@ import singleCardItemTwo from '../assets/singleCardItemTwo.jpg';
 import singleCardItemTwo2 from '../assets/singleCardItemTwo2.jpg';
 import singleCardItemTwo3 from '../assets/singleCardItemTwo3.jpg';
 
+import cardThreeData from  '../assets/cardThreeData.jpg';
+import cardTwoData from '../assets/cardTwoData.jpg';
+import cardTwoData2 from '../assets/cardTwoData2.jpg';
+import cardTwoData3 from '../assets/cardTwoData3.jpg';
+import cardTwoData4 from '../assets/cardTwoData4.jpg';
+import cardTwoData5 from '../assets/cardTwoData5.jpg';
+import cardTwoData6 from '../assets/cardTwoData6.jpg';
+import cardTwoData7 from '../assets/cardTwoData7.jpg';
 
+import opinion from '../assets/opinion.jpg';
+import opinion2 from '../assets/opinion2.jpg';
+import opinion3 from '../assets/opinion3.jpg';
+import opinion4 from '../assets/opinion4.jpg';
 
+import viral from '../assets/viral.jpg';
+import viral2 from '../assets/viral2.jpg';
+import viral3 from '../assets/viral3.jpg';
+import viral4 from '../assets/viral4.jpg';
+import viral5 from '../assets/viral5.jpg';
+import viral6 from '../assets/viral6.jpg';
 
+import dailyShow from '../assets/dailyShow.jpg';
+import dailyShow2 from '../assets/dailyShow2.jpg';
+import dailyShow3 from '../assets/dailyShow3.jpg';
 
 export const sampleData = [
   { id: 1, title: 'Rising sea levels threaten coastal cities worldwide.', urlToImage: watch1, category: 'World', section: 'watch_card' },
@@ -43,7 +64,7 @@ export const sampleData = [
   { id: 8, title: 'Breakthrough in genetic research could extend human lifespan.', urlToImage: TopTrending2, category: 'World', section: 'TopTrending_card' },
   { id: 9, title: 'Government enacts sweeping reforms to healthcare system.', urlToImage: TopTrending3, category: 'World', section: 'TopTrending_card' },
   { id: 10, title: 'Major sports event postponed due to health concerns.', urlToImage: TopTrending4, category: 'World', section: 'TopTrending_card' },
-  // { id: 111, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
+  { id: 111, title: 'Global Cultural Events  enacts sweeping reforms to healthcare system', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
   // { id: 112, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
   // { id: 113, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
 
@@ -64,7 +85,7 @@ export const sampleData = [
   { id: 22, title: 'Breakthrough in cancer research offers new hope for patients.', urlToImage: Web3, category: 'Business', section: 'Topstories_card' },
   { id: 23, title: 'Economic PoliciesGlobal protests demand action on climate change.', urlToImage: Web4, category: 'Business', section: 'FirstStories_card' },
   { id: 24, title: 'Global protests demand action on climate change.', urlToImage: Web5, category: 'Business', section: 'SecondStories_card' },
-  { id: 25, title: 'Record-breaking temperatures recorded across Europe.', urlToImage: singleCardItemOne, category: 'Business', section: 'singleCardItemOne_card' },
+  { id: 25, title: 'Record-breaking temperatures recorded across Europe.Record-breaking temperatures recorded across Europe', urlToImage: singleCardItemOne, category: 'Business', section: 'singleCardItemOne_card' },
   { id: 26, title: 'Historic court ruling advances LGBTQ+ rights.', urlToImage: singleCardItemOne2, category: 'Business', section: 'singleCardItemOne_card' },
   { id: 27, title: 'Economic sanctions imposed on rogue nation.', urlToImage: singleCardItemOne3, category: 'Business', section: 'singleCardItemOne_card' },
   { id: 28, title: 'Wildfires rage across California, prompting evacuations.', urlToImage: singleCardItemTwo, category: 'Business', section: 'singleCardItemTwo_card' },
@@ -72,21 +93,21 @@ export const sampleData = [
 
   { id: 30, title: 'Tech giant announces groundbreaking new product.', urlToImage: singleCardItemTwo3, category: 'Technology', section: 'singleCardItemTwo_card' },
   // { id: 31, title: 'Tech Innovations', urlToImage: Img, category: 'Technology', section: 'rightbarTrending' },
-  { id: 32, title: 'AI Developments', urlToImage: Img, category: 'Technology', section: 'cardThreeData_card' },
-  { id: 33, title: 'Cybersecurity Updates', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 34, title: 'Software Releases', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 35, title: 'Tech Conferences', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 36, title: 'Gadget Reviews', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 37, title: 'Tech Industry Trends', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 38, title: 'Tech Company News', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  { id: 39, title: 'Innovative Startups', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 32, title: 'Major tech company invests in space exploration invests in space exploration invests in space exploration .', urlToImage: cardThreeData, category: 'Technology', section: 'cardThreeData_card' },
+  { id: 33, title: 'Cybersecurity UpdatesMajor tech company invests in space exploration.', urlToImage: cardTwoData, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 34, title: 'Software Rising healthcare costs create financial strain for individuals.', urlToImage: cardTwoData2, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 35, title: 'Government unveils plan to modernize public transportation.', urlToImage: cardTwoData3, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 36, title: 'Rising cyber threats prompt calls for increased cybersecurity.', urlToImage: cardTwoData4, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 37, title: 'Major tech company invests in space exploration.', urlToImage:cardTwoData5, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 38, title: 'Rising cyber threats prompt calls for increased cybersecurity.', urlToImage: cardTwoData6, category: 'Technology', section: 'cardTwoData_card' },
+  { id: 39, title: 'Rising cyber threats prompt calls for increased cybersecurity.', urlToImage: cardTwoData7, category: 'Technology', section: 'cardTwoData_card' },
   // { id: 139, title: 'Innovative Startups', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
-  // { id:140, title: 'Innovative Startups', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
+  { id:140, title: 'Innovative Startups  enacts sweeping reforms to healthcare system', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
 
-  { id: 40, title: 'Rising sea levels threaten coastal cities worldwide.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
-  { id: 41, title: 'Olympic Games Government announces new infrastructure.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card'  },
-  { id: 42, title: 'Tennis TournamenInternational space mission ', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
-  { id: 43, title: 'Basketball New study links diet to improved mental health.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
+  { id: 40, title: 'Olympic Games Government announces new infrastructure.', urlToImage: opinion, category: 'Sports', section: 'opiniondata_card' },
+  { id: 41, title: 'Rising healthcare costs create financial strain for individuals.', urlToImage: opinion2, category: 'Sports', section: 'opiniondata_card'  },
+  { id: 42, title: 'Rising cyber threats prompt calls for increased cybersecurity.', urlToImage: opinion3, category: 'Sports', section: 'opiniondata_card' },
+  { id: 43, title: 'Basketball New study links diet to improved mental health.', urlToImage: opinion4, category: 'Sports', section: 'opiniondata_card' },
   { id: 44, title: 'Sports New study links diet to improved mental health.', urlToImage: Web1, category: 'Sports', section: 'Mainstories_card' },
   { id: 45, title: 'Athlete Major airline files for bankruptcy amid financial struggles.', urlToImage: Web2, category: 'Sports', section: 'Mainstories_card' },
   { id: 46, title: 'Tech giant announces groundbreaking new product.', urlToImage: Web3, category: 'Sports', section: 'Mainstories_card' },
@@ -94,16 +115,16 @@ export const sampleData = [
   { id: 48, title: 'Government unveils ambitious plan to reduce carbon emissions.', urlToImage: Web5, category: 'Sports', section: 'Mainstories_card' },
   // { id: 49, title: 'Sports Achievements', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
 
-  { id: 50, title: 'Health Tips', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
-  { id: 51, title: 'Medical Breakthroughs', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
-  { id: 52, title: 'Fitness Trends', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
-  { id: 53, title: 'Diet and Nutrition', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
-  { id: 54, title: 'Mental Health Awareness', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
-  { id: 55, title: 'Health Research', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },
+  { id: 50, title: 'Government enacts new laws to protect worker', urlToImage: viral, category: 'Health', section: 'ViralCardData_card' },
+  { id: 51, title: 'Major breakthrough in stem cell research.', urlToImage: viral2, category: 'Health', section: 'ViralCardData_card' },
+  { id: 52, title: 'Rising cyber threats prompt calls for increased security measures.', urlToImage: viral3, category: 'Health', section: 'ViralCardData_card' },
+  { id: 53, title: 'Diet and NutritionGovernment announces plan to improve public education.', urlToImage: viral4, category: 'Health', section: 'ViralCardData_card' },
+  { id: 54, title: 'Mental Health Government introduces new policies to support affordable housing', urlToImage: viral5, category: 'Health', section: 'ViralCardData_card' },
+  { id: 55, title: 'Health Rising tensions lead to international conflict.', urlToImage: viral6, category: 'Health', section: 'ViralCardData_card' },
   // { id: 56, title: 'Healthcare Policies', urlToImage: Img, category: 'Health', section: 'DailyShowCard_card' },
-  { id: 57, title: 'Health and Wellness', urlToImage: Img, category: 'Health', section: 'DailyShowCard_card', description: 'a picture in words of somebody/something or of something that happened' },
-  { id: 58, title: 'Medical Events', urlToImage: Img, category: 'Health', section: 'DailyShowCard_card', description: 'a picture in words of somebody/something or of something that happened' },
-  { id: 59, title: 'Health Gadgets', urlToImage: Img, category: 'Health', section: 'DailyShowCard_card',description: 'a picture in words of somebody/something or of something that happened' },
+  { id: 57, title: 'Health and Wellness', urlToImage: dailyShow, category: 'Health', section: 'DailyShowCard_card', description: 'a picture in words of somebody/something or of something that happened' },
+  { id: 58, title: 'Medical Events a picture in words of somebody/something or of something that happened ', urlToImage: dailyShow2, category: 'Health', section: 'DailyShowCard_card', description: 'a picture in words of somebody/something or of something that happened' },
+  { id: 59, title: 'Health Gadgets', urlToImage: dailyShow3, category: 'Health', section: 'DailyShowCard_card',description: 'a picture in words of somebody/something or of something that happened ,' },
 
   // { id: 60, title: 'Educational Trends', urlToImage: Img, category: 'Education', section: 'DailyShowCard_card' },
   // { id: 61, title: 'Student Life', urlToImage: Img, category: 'Education', section: 'DailyShowCard_card' },
@@ -154,17 +175,17 @@ export const sampleData = [
 export const newsArticles = [
   {
     id: 1,
-    title: "Photo 1",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
   },
   {
     id: 2,
-    title: "Photo 2",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
   },
   {
     id: 3,
-    title: "Photo 3",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
   }
 ];
@@ -172,17 +193,17 @@ export const newsArticles = [
 export const photos = [
   {
     id: 1,
-    title: "Photo 1",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 2,
-    title: "Photo 2",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 3,
-    title: "Photo 3",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   }
 ];
@@ -190,17 +211,17 @@ export const photos = [
 export const videos = [
   {
     id: 1,
-    title: "Photo 1",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 2,
-    title: "Photo 2",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   },
   {
     id: 3,
-    title: "Photo 3",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: "https://via.placeholder.com/300"
   }
 
@@ -232,17 +253,21 @@ export const ForProfile = [
   {
     id: 1,
     title: "Video 1",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
   },
   {
     id: 2,
     title: "Video 2",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
   },
   {
     id: 3,
     title: "Video 3",
+    title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
     urlToImage: Img
+
   }
   
 ];

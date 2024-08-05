@@ -13,7 +13,7 @@ const LiveSubCardOne =({ headline, imageSrc, category })  => {
           />
         </Link>
         <Link to="/id" title={headline}>
-          <h2 className="text-black text-md font-bold px-2 pt-4 pb-2 h-16 overflow-hidden">{headline}</h2>
+          <h2 className="text-black text-md font-bold p-2  overflow-hidden max-h-[60px]">{headline}</h2>
         </Link>
         <ul className="px-2">
           <li className="list-none text-xs text-gray-700 uppercase">

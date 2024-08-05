@@ -16,12 +16,12 @@ const OpinionCard = ({ headline, imageSrc, category, isLast }) => {
         />
       </Link>
       <Link to={`/story/${headline}`}>
-        <h3 className="block text-gray-800 m-1 text-sm mx-2 font-bold leading-5 max-h-15 overflow-hidden">
+        <h3 className="block text-gray-800 m-1 text-sm mx-2 font-bold leading-5 overflow-hidden max-h-[60px]">
           {headline}
         </h3>
       </Link>
       <Link to={`/story/${headline}`}>
-        <h4 className="text-sm block p-2  text-gray-700 font-medium absolute bottom-0">
+        <h4 className="text-sm block p-2 overflow-hidden   text-gray-700 font-medium absolute bottom-0">
           {category}
         </h4>
       </Link>

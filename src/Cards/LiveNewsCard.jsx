@@ -35,7 +35,7 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
         <style>{blinkKeyframes}</style>
       </div>
       <Link to={`/story/${headline}`}>
-        <div className='h-14 absolute w-full bottom-4'>
+        <div className='h-14 absolute w-full overflow-hidden max-h-[60px] bottom-4'>
         <h1 className="p-2 px-4 text-black bg-white text-xl font-bold">
         {headline}
         </h1>

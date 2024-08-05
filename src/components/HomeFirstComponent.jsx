@@ -90,7 +90,9 @@ return (
       <div className="lg:col-span-1">
          <WatchSlider />
          <div className="p-2 bg-white shadow-md rounded-sm overflow-hidden block mb-4">
+            <div className='mt-2 mb-5'>
             <HeadingComponent2 title="Top Trending" />
+            </div>
             {cardOneData.map((item) => (
             <CardOne
                key={item.id}
@@ -151,7 +153,7 @@ return (
                <div className="col-span-1">
                   <div className="flex flex-wrap">
                      {Firststories.map((story) => (
-                     <div key={story.id} className="w-full px-2 mb-4">
+                     <div key={story.id} className="w-full px-2">
                         <WebStoryCard
                            headline={story.headline}
                            imageSrc={story.imageSrc}
@@ -166,7 +168,7 @@ return (
                <div className="col-span-1">
                   <div className="flex flex-wrap">
                      {Secondstories.map((story) => (
-                     <div key={story.id} className="w-full px-2 mb-4">
+                     <div key={story.id} className="w-full px-2">
                         <WebStoryCard
                            headline={story.headline}
                            imageSrc={story.imageSrc}

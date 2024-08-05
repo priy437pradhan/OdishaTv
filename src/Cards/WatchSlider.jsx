@@ -7,6 +7,7 @@ import { HeadingComponent } from '../components/HeadingComponent';
 
 export const sliderData = [
   {
+    
     urlToImage: watch1,
     imgAlt: 'Watch Live Coverage',
     title: 'Insolvency: What Should The Airline Do Next',

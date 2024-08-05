@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaTimes } from 'react-icons/fa';
-import sampleData from '../lib/sampleData';
+import {sampleData } from '../lib/sampleData';
 
 const SearchData = () => {
   const [searchTerm, setSearchTerm] = useState('');

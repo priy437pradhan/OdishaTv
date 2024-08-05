@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WebStoryCard = ({ headline, imageSrc, link }) => {
   return (
-    <div className="relative flex w-full h-64 shadow-lg">
+    <div className="relative flex w-full h-80 shadow-lg">
       <Link to={`/story/${headline}`}>
         <img 
           src={imageSrc} 
@@ -14,7 +14,7 @@ const WebStoryCard = ({ headline, imageSrc, link }) => {
       </Link>
       <div className="absolute bottom-0 p-4">
       <Link to={`/story/${headline}`}>
-          <h2 className="text-white text-sm font-bold">{headline}</h2>
+          <h2 className=" text-white text-sm overflow-hidden max-h-[80px] font-bold">{headline}</h2>
         </Link>
       </div>
     </div>

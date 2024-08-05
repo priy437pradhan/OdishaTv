@@ -16,7 +16,7 @@ const ViralCard = ({ headline, imageSrc, id}) => {
                   />
                 </Link>
                 <Link to={`/story/${headline}`} title="otv">
-                  <h3 className="h-8 p-2">{headline} </h3>
+                  <h3 className="overflow-hidden max-h-[60px]  p-2">{headline} </h3>
                 </Link>
             </div>
   );

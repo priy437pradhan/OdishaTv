@@ -10,7 +10,7 @@ const VideoCard = ({ imageSrc, headline, id }) => {
           alt={headline}
           className="w-full object-cover"
         />
-        <h3 className="text-lg font-bold mt-2">
+        <h3 className="text-lg  font-bold mt-2">
           {headline}
         </h3>
       </Link>
