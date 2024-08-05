@@ -1,12 +1,14 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import {sampleData } from '../lib/sampleData'; 
+import { sampleData } from '../lib/sampleData'; 
+import { sliderData } from '../Cards/WatchSlider';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const StoryPage = () => {
   const { title } = useParams();
   const decodedTitle = decodeURIComponent(title);
-  const storyItem = sampleData.find(item => item.title === decodedTitle);
+  const storyItem = sampleData.find(item => item.title === decodedTitle) || 
+                    sliderData.find(item => item.title === decodedTitle);
 
   if (!storyItem) {
     return <div className="p-4">Story not found</div>;
@@ -48,6 +50,13 @@ const StoryPage = () => {
         
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Related Articles</h2>
+          {sliderData.map((item, index) => (
+            <div key={index} className="mb-4">
+              <Link to={`/story/${encodeURIComponent(item.title)}`} className="text-blue-500 hover:underline">
+                {item.title}
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
       
@@ -55,9 +64,13 @@ const StoryPage = () => {
         <div className="bg-gray-100 p-4 rounded shadow">
           <h2 className="text-xl font-semibold mb-4">Trending Stories</h2>
           <ul>
-            <li><Link to="/story/trending-story-1" className="text-blue-500 hover:underline">Trending Story 1</Link></li>
-            <li><Link to="/story/trending-story-2" className="text-blue-500 hover:underline">Trending Story 2</Link></li>
-            <li><Link to="/story/trending-story-3" className="text-blue-500 hover:underline">Trending Story 3</Link></li>
+            {sliderData.map((item, index) => (
+              <li key={index}>
+                <Link to={`/story/${encodeURIComponent(item.title)}`} className="text-blue-500 hover:underline">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

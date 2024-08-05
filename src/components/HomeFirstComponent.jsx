@@ -3,7 +3,7 @@ import { sampleData } from '../lib/sampleData';
 import { HeadingComponent2 } from './HeadingComponent';
 import SingleCard from '../Cards/SingleCard';
 import LiveNewsCard from '../Cards/LiveNewsCard';
-import WatchSlider from '../Cards/WatchSlider';
+import { WatchSlider } from '../Cards/WatchSlider';
 import LiveSubCardOne from '../Cards/LiveSubCardOne';
 import CardOne from '../Cards/CardOne';
 import Opinion from '../Cards/OpinionCard';
@@ -22,7 +22,7 @@ import { AdType1 } from '../Cards/Advertisement';
 
 const NewsList = () => {
 
-const [SpotLightNewsItem, setSpotLightNewsItem] = useState([]);
+const [LiveNewsCardItem, setLiveNewsCardItem] = useState([]);
 const [liveNewsItem, setLiveNewsItem] = useState([]);
 const [Topstories, setTopStories] = useState([]);
 const [Firststories, setFirstStories] = useState([]);
@@ -55,7 +55,7 @@ category: article.category,
 description: article.description,
 }));
 };
-setSpotLightNewsItem(getSectionData('SpotLight_card'));
+setLiveNewsCardItem(getSectionData('LiveNewsCard_card'));
 setTopStories(getSectionData('Topstories_card'));
 setFirstStories(getSectionData('FirstStories_card'));
 setSecondStories(getSectionData('SecondStories_card'));
@@ -105,7 +105,7 @@ return (
       <div className="lg:col-span-1">
          <div className="w-full">
             <div className="bg-white shadow-md rounded-sm overflow-hidden block mb-2">
-               {SpotLightNewsItem.map((liveNews) => (
+               {LiveNewsCardItem.map((liveNews) => (
                <div key={liveNews.id} >
                   <LiveNewsCard
                      headline={liveNews.headline}

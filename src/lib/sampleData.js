@@ -1,42 +1,76 @@
 import Img from '../assets/testing.jpg';
+import watch1 from '../assets/watch.jpg';
+import watch2 from '../assets/watch2.jpg';
+import watch3 from '../assets/watch3.jpg';
+import TopTrending from '../assets/TopTrending.jpg';
+import TopTrending2 from '../assets/TopTrending2.jpg';
+import TopTrending3 from '../assets/TopTrending3.jpg';
+import TopTrending4 from '../assets/TopTrending4.jpg';
+import TopTrending5 from '../assets/TopTrending5.jpg';
+import TopTrending6 from '../assets/TopTrending6.jpg';
+import TopTrending7 from '../assets/TopTrending7.jpg';
+import TopTrending8 from '../assets/TopTrending8.jpg';
+import TopTrending10 from '../assets/TopTrending10.jpg';
+import TopTrending11 from '../assets/TopTrending11.jpg';
+
+import Web1 from '../assets/web1.jpg';
+import Web2 from '../assets/web2.jpg';
+import Web3 from '../assets/web3.jpg';
+import Web4 from '../assets/web4.jpg';
+import Web5 from '../assets/web5.jpg';
+import LiveNewsCard from '../assets/LiveNewsCard.jpg';
+import liveNewsItem1 from '../assets/liveNewsItem1.jpg';
+import liveNewsItem2 from '../assets/liveNewsItem2.jpg';
+import singleCardItemOne from '../assets/singleCardItemOne.jpg';
+import singleCardItemOne2 from '../assets/singleCardItemOne2.jpg';
+import singleCardItemOne3 from '../assets/singleCardItemOne3.jpg';
+import singleCardItemTwo from '../assets/singleCardItemTwo.jpg';
+import singleCardItemTwo2 from '../assets/singleCardItemTwo2.jpg';
+import singleCardItemTwo3 from '../assets/singleCardItemTwo3.jpg';
+
+
+
+
 
 export const sampleData = [
-  { id: 1, title: 'Global Political Shift', urlToImage: Img, category: 'World', section: 'watch_card' },
-  { id: 2, title: 'Climate Change Impact', urlToImage: Img, category: 'World', section: 'watch_card' },
-  { id: 3, title: 'World Economy Trends', urlToImage: Img, category: 'World', section: 'watch_card' },
-  { id: 4, title: 'International Relations', urlToImage: Img, category: 'World', section: 'watch_card' },
-  { id: 5, title: 'Global Health Issues', urlToImage: Img, category: 'World', section: 'watch_card' },
-  { id: 6, title: 'World News Highlights', urlToImage: Img, category: 'World', section: 'liveNewsItem_card' },
-  { id: 7, title: 'Global Technology Advances', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
-  { id: 8, title: 'World Travel Updates', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
-  { id: 9, title: 'International Sports Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
-  { id: 10, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
+  { id: 1, title: 'Rising sea levels threaten coastal cities worldwide.', urlToImage: watch1, category: 'World', section: 'watch_card' },
+  { id: 2, title: 'Government announces new infrastructure investment plan.', urlToImage: watch2, category: 'World', section: 'watch_card' },
+  { id: 3, title: 'New study links diet to improved mental health.', urlToImage: watch3, category: 'World', section: 'watch_card' },
+  // { id: 4, title: 'International Relations', urlToImage: Img, category: 'World', section: 'watch_card' },
+  // { id: 5, title: 'Global Health Issues', urlToImage: Img, category: 'World', section: 'watch_card' },
+  
+  { id: 7, title: 'Global Technology AdvancesBreakthrough in genetic research.', urlToImage: TopTrending, category: 'World', section: 'TopTrending_card' },
+  { id: 8, title: 'Breakthrough in genetic research could extend human lifespan.', urlToImage: TopTrending2, category: 'World', section: 'TopTrending_card' },
+  { id: 9, title: 'Government enacts sweeping reforms to healthcare system.', urlToImage: TopTrending3, category: 'World', section: 'TopTrending_card' },
+  { id: 10, title: 'Major sports event postponed due to health concerns.', urlToImage: TopTrending4, category: 'World', section: 'TopTrending_card' },
   // { id: 111, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
   // { id: 112, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
   // { id: 113, title: 'Global Cultural Events', urlToImage: Img, category: 'World', section: 'TopTrending_card' },
 
-  { id: 11, title: 'Political Scandals', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 12, title: 'Election Updates', urlToImage: Img, category: 'Politics', section: 'TopTrending_card'},
-  { id: 13, title: 'Government Policies', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 14, title: 'Political Debates', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 15, title: 'Legislative Changes', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 16, title: 'Political Campaigns', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 17, title: 'International Political News', urlToImage: Img, category: 'Politics', section: 'TopTrending_card' },
-  { id: 18, title: 'Public Protests', urlToImage: Img, category: 'Politics', section: 'liveNewsItem_card' },
-  { id: 19, title: 'Political Analysis', urlToImage: Img, category: 'Politics', section: 'SpotLight_card' },
+  { id: 11, title: 'Major sports event postponed due to health concerns.', urlToImage: TopTrending5, category: 'Politics', section: 'TopTrending_card' },
+  { id: 12, title: 'Scientists develop promising vaccine for infectious disease.', urlToImage: TopTrending6, category: 'Politics', section: 'TopTrending_card'},
+  { id: 13, title: 'Major oil spill devastates marine ecosystem.', urlToImage: TopTrending7, category: 'Politics', section: 'TopTrending_card' },
+  { id: 14, title: 'Tech company faces backlash over privacy concerns.', urlToImage: TopTrending8, category: 'Politics', section: 'TopTrending_card' },
+  { id: 15, title: 'Major oil spill devastates marine ecosystem.', urlToImage: TopTrending6, category: 'Politics', section: 'TopTrending_card' },
+  { id: 16, title: 'Scientists develop promising vaccine for infectious disease.', urlToImage: TopTrending10, category: 'Politics', section: 'TopTrending_card' },
+  { id: 17, title: 'Major oil spill devastates marine ecosystem.', urlToImage: TopTrending11, category: 'Politics', section: 'TopTrending_card' },
+  { id: 19, title: 'World leaders convene for climate change summit in Paris', urlToImage: LiveNewsCard, category: 'Politics', section: 'LiveNewsCard_card' },
+  { id: 18, title: 'New technology promises to revolutionize renewable energy', urlToImage: liveNewsItem2, category: 'Politics', section: 'liveNewsItem_card' },
+  { id: 6, title: 'Stock markets rally after positive earnings reports', urlToImage: liveNewsItem1, category: 'World', section: 'liveNewsItem_card' },
+ 
 
-  { id: 20, title: 'Market Trends', urlToImage: Img, category: 'Business', section: 'Topstories_card' },
-  { id: 21, title: 'Startup News', urlToImage: Img, category: 'Business', section: 'Topstories_card' },
-  { id: 22, title: 'Business Innovations', urlToImage: Img, category: 'Business', section: 'Topstories_card' },
-  { id: 23, title: 'Economic Policies', urlToImage: Img, category: 'Business', section: 'FirstStories_card' },
-  { id: 24, title: 'Corporate News', urlToImage: Img, category: 'Business', section: 'SecondStories_card' },
-  { id: 25, title: 'Investment Opportunities', urlToImage: Img, category: 'Business', section: 'singleCardItemOne_card' },
-  { id: 26, title: 'Business Conferences', urlToImage: Img, category: 'Business', section: 'singleCardItemOne_card' },
-  { id: 27, title: 'Business Leadership', urlToImage: Img, category: 'Business', section: 'singleCardItemOne_card' },
-  { id: 28, title: 'Retail Updates', urlToImage: Img, category: 'Business', section: 'singleCardItemTwo_card' },
-  { id: 29, title: 'Tech Startups', urlToImage: Img, category: 'Business', section: 'singleCardItemTwo_card' },
+  { id: 20, title: 'Historic peace agreement signed in the Middle East', urlToImage: Web1, category: 'Business', section: 'Topstories_card' },
+  { id: 21, title: 'Major cyberattack targets global financial institutions.', urlToImage: Web2, category: 'Business', section: 'Topstories_card' },
+  { id: 22, title: 'Breakthrough in cancer research offers new hope for patients.', urlToImage: Web3, category: 'Business', section: 'Topstories_card' },
+  { id: 23, title: 'Economic PoliciesGlobal protests demand action on climate change.', urlToImage: Web4, category: 'Business', section: 'FirstStories_card' },
+  { id: 24, title: 'Global protests demand action on climate change.', urlToImage: Web5, category: 'Business', section: 'SecondStories_card' },
+  { id: 25, title: 'Record-breaking temperatures recorded across Europe.', urlToImage: singleCardItemOne, category: 'Business', section: 'singleCardItemOne_card' },
+  { id: 26, title: 'Historic court ruling advances LGBTQ+ rights.', urlToImage: singleCardItemOne2, category: 'Business', section: 'singleCardItemOne_card' },
+  { id: 27, title: 'Economic sanctions imposed on rogue nation.', urlToImage: singleCardItemOne3, category: 'Business', section: 'singleCardItemOne_card' },
+  { id: 28, title: 'Wildfires rage across California, prompting evacuations.', urlToImage: singleCardItemTwo, category: 'Business', section: 'singleCardItemTwo_card' },
+  { id: 29, title:'Global protests demand action on climate change.', urlToImage: singleCardItemTwo3, category: 'Technology', urlToImage: singleCardItemTwo2, category: 'Business', section: 'singleCardItemTwo_card' },
 
-  { id: 30, title: 'Latest Gadgets', urlToImage: Img, category: 'Technology', section: 'singleCardItemTwo_card' },
+  { id: 30, title: 'Tech giant announces groundbreaking new product.', urlToImage: singleCardItemTwo3, category: 'Technology', section: 'singleCardItemTwo_card' },
   // { id: 31, title: 'Tech Innovations', urlToImage: Img, category: 'Technology', section: 'rightbarTrending' },
   { id: 32, title: 'AI Developments', urlToImage: Img, category: 'Technology', section: 'cardThreeData_card' },
   { id: 33, title: 'Cybersecurity Updates', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
@@ -49,15 +83,15 @@ export const sampleData = [
   // { id: 139, title: 'Innovative Startups', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
   // { id:140, title: 'Innovative Startups', urlToImage: Img, category: 'Technology', section: 'cardTwoData_card' },
 
-  { id: 40, title: 'Football Scores', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
-  { id: 41, title: 'Olympic Games Updates', urlToImage: Img, category: 'Sports', section: 'opiniondata_card'  },
-  { id: 42, title: 'Tennis Tournaments', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
-  { id: 43, title: 'Basketball Highlights', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
-  { id: 44, title: 'Sports Injuries', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
-  { id: 45, title: 'Athlete Profiles', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
-  { id: 46, title: 'Sports Events Schedule', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
-  { id: 47, title: 'Esports News', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
-  { id: 48, title: 'Sports Betting Tips', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
+  { id: 40, title: 'Rising sea levels threaten coastal cities worldwide.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
+  { id: 41, title: 'Olympic Games Government announces new infrastructure.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card'  },
+  { id: 42, title: 'Tennis TournamenInternational space mission ', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
+  { id: 43, title: 'Basketball New study links diet to improved mental health.', urlToImage: Img, category: 'Sports', section: 'opiniondata_card' },
+  { id: 44, title: 'Sports New study links diet to improved mental health.', urlToImage: Web1, category: 'Sports', section: 'Mainstories_card' },
+  { id: 45, title: 'Athlete Major airline files for bankruptcy amid financial struggles.', urlToImage: Web2, category: 'Sports', section: 'Mainstories_card' },
+  { id: 46, title: 'Tech giant announces groundbreaking new product.', urlToImage: Web3, category: 'Sports', section: 'Mainstories_card' },
+  { id: 47, title: 'Scientists discover new species in the Amazon rainforest.', urlToImage: Web4, category: 'Sports', section: 'Mainstories_card' },
+  { id: 48, title: 'Government unveils ambitious plan to reduce carbon emissions.', urlToImage: Web5, category: 'Sports', section: 'Mainstories_card' },
   // { id: 49, title: 'Sports Achievements', urlToImage: Img, category: 'Sports', section: 'Mainstories_card' },
 
   { id: 50, title: 'Health Tips', urlToImage: Img, category: 'Health', section: 'ViralCardData_card' },

@@ -26,7 +26,7 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
       <img
         src={imageSrc}
         alt={headline}
-        className="absolute inset-0 w-full h-84 object-cover"
+        className="absolute inset-0 w-full h-84 object-cover rounded-t-sm"
       />
       </Link>
       <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold flex items-center">
@@ -35,9 +35,11 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
         <style>{blinkKeyframes}</style>
       </div>
       <Link to={`/story/${headline}`}>
-      <h1 className="absolute bottom-4 p-2 px-4 text-black bg-white text-xl font-bold">
+        <div className='h-14 absolute w-full bottom-4'>
+        <h1 className="p-2 px-4 text-black bg-white text-xl font-bold">
         {headline}
-      </h1>
+        </h1>
+        </div>
       </Link>
     </div>
   );
