@@ -9,7 +9,7 @@ const DailyShowCard = ({ headline, imageSrc, description,id }) => {
         <div className="row flex flex-wrap min-h-96 -mx-2">
             <div className="w-full  px-2 mb-4" key={id}>
               <div className="bg-white rounded-t-sm min-h-[380px] overflow-hidden shadow-md">
-                <Link to={`/story/${headline}`} title="otv">
+                <Link to={`/story/${id}`} title="otv">
                   <img
                     src={imageSrc}
                     alt={headline}
@@ -18,7 +18,7 @@ const DailyShowCard = ({ headline, imageSrc, description,id }) => {
                   />
                 </Link>
                 <div className="p-4">
-                  <Link to={`/story/${headline}`} title="otv">
+                  <Link to={`/story/${id}`} title="otv">
                     <h3 className="text-lg font-bold mb-4 relative pb-4 after:content-[''] after:block after:w-40 after:h-px after:bg-gray-200 after:absolute max-h-[60px] overflow-hidden after:bottom-0 after:left-0">
                       {headline}
                     </h3>

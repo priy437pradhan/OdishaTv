@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const LiveNewsCard = ({ imageSrc, headline }) => {
+const LiveNewsCard = ({ headline, imageSrc, category ,id}) => {
   const dotStyle = {
     width: '8px',
     height: '8px',
@@ -22,7 +22,7 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
 
   return (
     <div className="relative w-full h-96">
-      <Link to={`/story/${headline}`}>
+      <Link to={`/story/${id}`}>
       <img
         src={imageSrc}
         alt={headline}
@@ -34,7 +34,7 @@ const LiveNewsCard = ({ imageSrc, headline }) => {
         LIVE
         <style>{blinkKeyframes}</style>
       </div>
-      <Link to={`/story/${headline}`}>
+      <Link to={`/story/${id}`}>
         <div className='h-14 absolute w-full overflow-hidden max-h-[60px] bottom-4'>
         <h1 className="p-2 px-4 text-black bg-white text-xl font-bold">
         {headline}

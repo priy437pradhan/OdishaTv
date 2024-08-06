@@ -7,7 +7,7 @@ const ViralCard = ({ headline, imageSrc, id}) => {
   return (
 
             <div className="h-48 bg-white shadow-md" key={id}>
-                <Link to={`/story/${headline}`}  title="otv">
+                <Link to={`/story/${id}`}  title="otv">
                   <img
                     src={imageSrc} 
                     alt={headline} 
@@ -15,7 +15,7 @@ const ViralCard = ({ headline, imageSrc, id}) => {
                     className="h-32"
                   />
                 </Link>
-                <Link to={`/story/${headline}`} title="otv">
+                <Link to={`/story/${id}`} title="otv">
                   <h3 className="overflow-hidden max-h-[60px]  p-2">{headline} </h3>
                 </Link>
             </div>

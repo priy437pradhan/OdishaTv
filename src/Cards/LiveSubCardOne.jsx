@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const LiveSubCardOne =({ headline, imageSrc, category })  => {
+const LiveSubCardOne =({ headline, imageSrc, category,id })  => {
   return (
     <div className="w-full px-1 h-80">
       <div className="bg-white h-full relative pb-6 shadow-md rounded-sm">
-        <Link to={`/story/${headline}`} title={headline}>
+        <Link to={`/story/${id}`} title={headline}>
           <img
             src={imageSrc} 
             alt={headline}
             className="w-full h-56 object-cover rounded-t-sm"
           />
         </Link>
-        <Link to="/id" title={headline}>
+        <Link to={`/story/${id}`} title={id}>
           <h2 className="text-black text-md font-bold p-2  overflow-hidden max-h-[60px]">{headline}</h2>
         </Link>
         <ul className="px-2">

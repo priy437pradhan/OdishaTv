@@ -5,10 +5,9 @@ import { sliderData } from '../Cards/WatchSlider';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const StoryPage = () => {
-  const { title } = useParams();
-  const decodedTitle = decodeURIComponent(title);
-  const storyItem = sampleData.find(item => item.title === decodedTitle) || 
-                    sliderData.find(item => item.title === decodedTitle);
+  const { id } = useParams();
+  const storyItem = sampleData.find(item => item.id === parseInt(id)) ||
+                    sliderData.find(item => item.id === parseInt(id));
 
   if (!storyItem) {
     return <div className="p-4">Story not found</div>;
@@ -16,9 +15,12 @@ const StoryPage = () => {
 
   return (
     <div className="flex flex-wrap">
-      <div className="w-full md:w-2/3 p-4">
+      <div className='pb-2 border-b-2 border-dashed'>
+        <h1 className="text-4xl font-semibold mb-4">{storyItem.title}</h1>
+        <p className='text-lg'>{storyItem.storyIntro}</p>
+      </div>
+      <div className="w-full md:w-2/3 py-4">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold mb-4">{storyItem.title}</h1>
           <p className="text-sm text-gray-600 mb-4">
             Published on {new Date(storyItem.publishedAt).toLocaleDateString()}
             <br />
@@ -30,7 +32,6 @@ const StoryPage = () => {
             className="w-full h-auto mb-4"
             style={{ aspectRatio: '16 / 9' }} 
           />
-          <p className="text-lg leading-relaxed mb-4">{storyItem.description}</p>
 
           <div className="flex space-x-4 mb-6">
             <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer">
@@ -52,12 +53,12 @@ const StoryPage = () => {
           <h2 className="text-xl font-semibold mb-4">Related Articles</h2>
           {sliderData.map((item, index) => (
             <div key={index} className="mb-4">
-              <Link to={`/story/${encodeURIComponent(item.title)}`} className="text-blue-500 hover:underline">
+              <Link to={`/story/${item.id}`} className="text-blue-500 hover:underline">
                 {item.title}
               </Link>
             </div>
           ))}
-        </div>
+        </div> 
       </div>
       
       <div className="w-full md:w-1/3 p-4">
@@ -66,13 +67,13 @@ const StoryPage = () => {
           <ul>
             {sliderData.map((item, index) => (
               <li key={index}>
-                <Link to={`/story/${encodeURIComponent(item.title)}`} className="text-blue-500 hover:underline">
+                <Link to={`/story/${item.id}`} className="text-blue-500 hover:underline">
                   {item.title}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </div> 
       </div>
     </div>
   );

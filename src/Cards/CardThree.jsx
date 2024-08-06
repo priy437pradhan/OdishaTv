@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CardThree = ({ headline, imageSrc, category }) => {
+const CardThree = ({ headline, imageSrc, category,id }) => {
   return (
     <div className={`h-60 bg-white`}>
       <div className="w-full my-4 h-40">
-        <Link to={`/story/${headline}`}>
+        <Link to={`/story/${id}`}>
           <img 
             src={imageSrc} 
             alt={headline} 
@@ -14,7 +14,7 @@ const CardThree = ({ headline, imageSrc, category }) => {
           />
         </Link>
       </div>
-      <Link to={`/story/${headline}`}>
+      <Link to={`/story/${id}`}>
         <h2 className="text-sm font-bold overflow-hidden max-h-[60px] my-2">{headline}</h2>
       </Link>
     </div>

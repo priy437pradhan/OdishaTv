@@ -13,9 +13,9 @@ import WebStoryCard from '../Cards/WebstoryComponent';
 import ViralCard from '../Cards/ViralCard';
 import DailyShowCard from '../Cards/DailyShowCard';
 import VideoCard from '../Cards/VideoCard';
-import PhotoCard from '../Cards/VideoCard';
+import PhotoCard from '../Cards/PhotoCard';
 import VideoSubCard from '../Cards/VideoSubCard';
-import PhotoSubCard from '../Cards/VideoSubCard';
+import PhotoSubCard from '../Cards/PhotoSubCard';
 import CricketNews from '../Cards/CricketNews';
 import SectionFor from '../Cards/SectionFor';
 import { AdType1 } from '../Cards/Advertisement';
@@ -56,6 +56,7 @@ description: article.description,
 }));
 };
 setLiveNewsCardItem(getSectionData('LiveNewsCard_card'));
+setLiveNewsItem(getSectionData('liveNewsItem_card'));
 setTopStories(getSectionData('Topstories_card'));
 setFirstStories(getSectionData('FirstStories_card'));
 setSecondStories(getSectionData('SecondStories_card'));
@@ -65,7 +66,6 @@ setCardTwoData(getSectionData('cardTwoData_card'));
 setCardThreeData(getSectionData('cardThreeData_card'));
 setSingleCardItemOne(getSectionData('singleCardItemOne_card'));
 setSingleCardItemTwo(getSectionData('singleCardItemTwo_card')); 
-setLiveNewsItem(getSectionData('liveNewsItem_card'));
 setOpinionData(getSectionData('opiniondata_card'));
 setViralCardData(getSectionData('ViralCardData_card'));
 setDailyShowCardData(getSectionData('DailyShowCard_card'));
@@ -110,8 +110,10 @@ return (
                {LiveNewsCardItem.map((liveNews) => (
                <div key={liveNews.id} >
                   <LiveNewsCard
+                  id={liveNews.id}
                      headline={liveNews.headline}
                      imageSrc={liveNews.imageSrc}
+                     category={liveNews.category}
                      />
                </div>
                ))}
@@ -120,6 +122,7 @@ return (
                {liveNewsItem.map((liveNews) => (
                <div key={liveNews.id} className="col-span-1">
                   <LiveSubCardOne
+                  id={liveNews.id}
                      headline={liveNews.headline}
                      imageSrc={liveNews.imageSrc}
                      category={liveNews.category}
@@ -131,6 +134,7 @@ return (
                {Topstories.map((story) => (
                <div key={story.id} className="w-full sm:w-1/3 px-2 mb-4">
                   <WebStoryCard
+                  id={story.id}
                      headline={story.headline}
                      imageSrc={story.imageSrc}
                      link={`/story/${story.id}`}
@@ -143,6 +147,7 @@ return (
                   {singleCardItemOne.map((story) => (
                   <div key={story.id} className="p-2 w-full">
                      <SingleCard
+                     id={story.id}
                      headline={story.headline}
                      imageSrc={story.imageSrc}
                      isLast={story.id === singleCardItemOne[singleCardItemOne.length - 1].id}
@@ -155,9 +160,10 @@ return (
                      {Firststories.map((story) => (
                      <div key={story.id} className="w-full px-2">
                         <WebStoryCard
+                        id={story.id}
                            headline={story.headline}
                            imageSrc={story.imageSrc}
-                           link={`/story/${story.id}`}
+                          
                            />
                      </div>
                      ))}
@@ -170,9 +176,10 @@ return (
                      {Secondstories.map((story) => (
                      <div key={story.id} className="w-full px-2">
                         <WebStoryCard
+                         id={story.id}
                            headline={story.headline}
                            imageSrc={story.imageSrc}
-                           link={`/story/${story.id}`}
+                           
                            />
                      </div>
                      ))}
@@ -200,6 +207,7 @@ return (
             {cardThreeData.map((item) => (
             <CardThree
                key={item.id}
+               id={item.id}
                headline={item.headline}
                imageSrc={item.imageSrc}
                category={item.category}
@@ -210,6 +218,7 @@ return (
             {cardTwoData.map((item) => (
             <CardTwo
                key={item.id}
+               id={item.id}
                headline={item.headline}
                imageSrc={item.imageSrc}
                category={item.category}
@@ -243,6 +252,7 @@ return (
          {Mainstories.map((story) => (
          <div key={story.id}>
             <WebStoryCard
+            id={story.id}
                headline={story.headline}
                imageSrc={story.imageSrc}
                link={`/story/${story.id}`}
@@ -259,6 +269,7 @@ return (
          {ViralCarddata.map((story) => (
          <div key={story.id}>
             <ViralCard
+            id={story.id}
                headline={story.headline}
                imageSrc={story.imageSrc}
                link={`/story/${story.id}`}
@@ -274,7 +285,8 @@ return (
       <div className="grid my-2 grid-cols-3 gap-4">
          {DailyShowCarddata.map((story) => (
          <div key={story.id}>
-            <DailyShowCard                          
+            <DailyShowCard 
+            id={story.id}                         
                headline={story.headline}
                imageSrc={story.imageSrc}
                link={`/story/${story.id}`}
@@ -284,8 +296,7 @@ return (
          ))}
       </div>
    </div>
-    <CricketNews />
-   <SectionFor />
+   
    <div className="flex mb-4 gap-5">
       <div className="grid  w-1/2" >
          <div className='mb-4 mx-2'>
@@ -295,7 +306,8 @@ return (
             <div>
                {VideoCarddata.map((story) => (
                <div key={story.id}>
-                  <VideoCard                          
+                  <VideoCard 
+                  id={story.id}                         
                      headline={story.headline}
                      imageSrc={story.imageSrc}
                      link={`/story/${story.id}`}
@@ -306,7 +318,8 @@ return (
             <div className="w-2/6 mx-2">
                {VideoSubCarddata.map((Substory) => (
                <div key={Substory.id}>
-                  <VideoSubCard                          
+                  <VideoSubCard  
+                  id={Substory.id}                        
                      headline={Substory.headline}
                      imageSrc={Substory.imageSrc}
                      link={`/story/${Substory.id}`}
@@ -325,7 +338,8 @@ return (
             <div>
                {PhotoCarddata.map((story) => (
                <div key={story.id}>
-                  <PhotoCard                          
+                  <PhotoCard  
+                  id={story.id}                        
                      headline={story.headline}
                      imageSrc={story.imageSrc}
                      link={`/story/${story.id}`}
@@ -336,7 +350,8 @@ return (
             <div className="w-2/6 mx-2">
                {PhotoSubCarddata.map((Substory) => (
                <div key={Substory.id}>
-                  <PhotoSubCard                          
+                  <PhotoSubCard 
+                  id={Substory.id}                         
                      headline={Substory.headline}
                      imageSrc={Substory.imageSrc}
                      link={`/story/${Substory.id}`}
@@ -347,7 +362,8 @@ return (
          </div>
       </div>
    </div>
-   
+   <CricketNews />
+   <SectionFor />
   
 </div>
 );
