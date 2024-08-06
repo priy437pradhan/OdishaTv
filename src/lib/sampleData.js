@@ -37,8 +37,8 @@ import cardTwoData5 from '../assets/cardTwoData5.jpg';
 import cardTwoData6 from '../assets/cardTwoData6.jpg';
 import cardTwoData7 from '../assets/cardTwoData7.jpg';
 
-import opinion from '../assets/Opinion.jpg';
-import opinion2 from '../assets/opinion2jpg.jpg';
+import opinion from '../assets/opinion.jpg';
+import opinion2 from '../assets/opinion2.jpg';
 import opinion3 from '../assets/opinion3.jpg';
 import opinion4 from '../assets/opinion4.jpg';
 
