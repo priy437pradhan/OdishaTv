@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color: white;
-  border-bottom: 2px solid black; 
-  width: -webkit-fill-available;
+  @apply fixed top-0 left-0 z-10 bg-white border-b-2 border-black w-full;
 }
+
+.dark .sticky {
+  @apply border-gray-700; 
+}
+
 .custom-before::before {
   content: "";
   display: inline-block;
@@ -21,24 +19,25 @@
   margin-right: 0.5rem; 
   vertical-align: middle;
 }
+
 body {
   @apply bg-gray-50 text-gray-900;
+  @apply border-gray-200;
+  
+
 }
-a{
+
+a {
   @apply no-underline;
 }
-a:hover{
+
+a:hover {
   @apply no-underline;
 }
-
-
-
 
 input, textarea {
   @apply border-gray-300;
 }
-
-
 
 .card {
   @apply p-4 bg-white shadow-md rounded-md;
@@ -67,27 +66,14 @@ h1, h2, h3, h4, h5, h6 {
 .dark a {
   @apply text-white;
 }
-/* 
-.dark a:hover {
-  @apply text-gray-50;
-  text-decoration: none;
-} */
 
 .dark button {
-  @apply bg-red-700 text-white border border-transparent rounded-md shadow-sm;
+  @apply bg-red-500 text-white border border-transparent rounded-md shadow-sm;
 }
 
 .dark button:hover {
-  @apply bg-red-800;
+  @apply bg-red-600;
 }
-
-/* .dark input, .dark textarea {
-  @apply border-gray-700 bg-gray-800 text-gray-300;
-}
-
-.dark input:focus, .dark textarea:focus {
-  @apply border-blue-600 ring-blue-600;
-} */
 
 .dark .card {
   @apply bg-gray-800 shadow-lg;
@@ -105,11 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   @apply bg-gray-700 border-gray-600 text-gray-300;
 }
 
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 , .dark p, .dark span{
-  @apply text-gray-100;
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark span .dark a {
+  @apply text-gray-300;
 }
-
-
 
 .dark .bg-white {
   @apply bg-gray-800;
@@ -118,8 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 .dark .example-div {
   @apply bg-gray-800;
 }
-
-/* In your global CSS file or a Tailwind component-specific CSS file */
 
 .nav.section-tab-menu {
   @apply overflow-x-auto whitespace-nowrap;

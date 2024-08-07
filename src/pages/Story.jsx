@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { sampleData } from '../lib/sampleData'; 
 import { sliderData } from '../Cards/WatchSlider';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const StoryPage = () => {
   const { id } = useParams();
@@ -14,8 +15,9 @@ const StoryPage = () => {
   }
 
   return (
+    <Helmet>
     <div className="flex flex-wrap">
-      <div className='pb-2 border-b-2 border-dashed'>
+      <div className='pb-2 border-b-2 border-dashed dark:border-gray-700'>
         <h1 className="text-4xl font-semibold mb-4">{storyItem.title}</h1>
         <p className='text-lg'>{storyItem.storyIntro}</p>
       </div>
@@ -76,6 +78,7 @@ const StoryPage = () => {
         </div> 
       </div>
     </div>
+    </Helmet>
   );
 };
 

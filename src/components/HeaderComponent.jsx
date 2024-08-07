@@ -59,7 +59,7 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white shadow-lg">
-      <div className="hidden md:flex justify-between items-center bg-white border-b-2 p-2">
+      <div className="hidden md:flex justify-between items-center bg-white border-b-2 dark:border-slate-700 p-2">
         <div className="flex space-x-4">
         <Link to="#">
         <img className="h-5 separator hover:opacity-75 transition-opacity duration-300" src={facebook_img} alt="Facebook" />
@@ -83,7 +83,7 @@ const Header = () => {
         
       </div>
 
-      <div className="relative bg-white flex justify-center border-b-2 py-4">
+      <div className="relative bg-white flex justify-center border-b-2 dark:border-slate-700 py-4">
         <div className="absolute top-0 left-0 lg:text-lg hidden md:flex text-sm text-gray-400 p-2">
           <span>{dateTime.toLocaleDateString()}</span> |
           <span>{dateTime.toLocaleTimeString()}</span>
@@ -113,7 +113,7 @@ const Header = () => {
 
       <div
   id="third-row"
-  className="flex justify-between items-center h-18 bg-white border-b-2 text-black py-1 px-2"
+  className="flex justify-between items-center h-18 bg-white border-b-2 dark:border-slate-700 text-black py-1 px-2"
 >
   <div className="relative flex-1 flex lg:justify-center overflow-x-auto space-x-4">
     <Link to="/" className="text-lg whitespace-nowrap">
@@ -123,7 +123,7 @@ const Header = () => {
       <Link
         key={index}
         to={`/category/${category.name.toLowerCase()}`}
-        className="text-lg whitespace-nowrap"
+        className="text-lg  dark:text-gray-400 whitespace-nowrap"
       >
         {category.name}
       </Link>

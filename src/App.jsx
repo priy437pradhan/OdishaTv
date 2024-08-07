@@ -8,6 +8,7 @@ const Story = lazy(() => import('./pages/Story'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
 const CategoryListing = lazy(() => import('./pages/CategoryListing'));
+const TagListing = lazy(() => import('./pages/TagListing'));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/category/:category" element={<CategoryListing />} />
+            <Route path="/tag/:tag" element={<TagListing/>} />
           </Routes>
         </Suspense>
       </div>
