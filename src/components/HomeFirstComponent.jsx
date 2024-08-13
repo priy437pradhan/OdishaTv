@@ -47,12 +47,12 @@ const fetchData = () => {
 try {
 const data = sampleData;
 const getSectionData = (sectionName) => {
-return data.filter(article => article.section === sectionName).map(article => ({
-id: article.id,
-headline: article.title,
-imageSrc: article.urlToImage,
-category: article.category,
-description: article.description,
+return data.filter(story => story.section === sectionName).map(story => ({
+id: story.id,
+headline: story.title,
+imageSrc: story.urlToImage,
+category: story.category,
+description: story.description,
 }));
 };
 setLiveNewsCardItem(getSectionData('LiveNewsCard_card'));

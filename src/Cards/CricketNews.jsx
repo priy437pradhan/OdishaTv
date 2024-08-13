@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { newsArticles, photos, videos } from '../lib/sampleData';
+import { newsStories, photos, videos } from '../lib/sampleData';
 import { HeadingComponent2 } from '../components/HeadingComponent';
 const getSectionData = (sectionName) => {
   const data = {
-    News: newsArticles,
+    News: newsStories,
     Photos: photos,
     Videos: videos
   };

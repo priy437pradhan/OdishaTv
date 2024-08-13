@@ -3,27 +3,31 @@ import { useParams, Link } from 'react-router-dom';
 import { sampleData } from '../lib/sampleData';
 import { AdType1 } from '../Cards/Advertisement';
 import CardOne from '../Cards/CardOne';
-import { Helmet } from 'react-helmet';
+import DropDown from '../components/DistrictDropDown';
 
 const ITEMS_PER_PAGE = 5;
 
 const CategoryListing = () => {
-  const { category } = useParams();
+  const { category, district } = useParams();
   const [currentPage, setCurrentPage] = useState(1);
   const [cardOneData, setCardOneData] = useState([]);
   const [error, setError] = useState(null);
 
-  const filteredData = sampleData.filter(item => item.category.toLowerCase() === category.toLowerCase());
+  const filteredData = sampleData.filter(item => 
+    item.category.toLowerCase() === category.toLowerCase() &&
+    (!district || item.district.toLowerCase() === district.toLowerCase())
+  );
+  
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
 
   useEffect(() => {
     try {
       const data = sampleData;
-      setCardOneData(data.slice(6, 9).map((article) => ({
-        id: article.id,
-        headline: article.title,
-        imageSrc: article.urlToImage,
-        category: article.category,
+      setCardOneData(data.slice(6, 9).map((story) => ({
+        id: story.id,
+        headline: story.title,
+        imageSrc: story.urlToImage,
+        category: story.category,
       })));
     } catch (error) {
       setError('Error fetching data');
@@ -33,7 +37,7 @@ const CategoryListing = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [category]);
+  }, [category, district]);
 
   const handlePreviousPage = () => {
     if (currentPage > 1) {
@@ -52,11 +56,10 @@ const CategoryListing = () => {
   const paginatedData = filteredData.slice(startIndex, endIndex);
 
   if (error) {
-    return <div>{error}</div>;
+    return <div className="text-red-500">Something went wrong. Please try again later.</div>;
   }
 
   return (
-    <Helmet>
     <div className="flex flex-wrap">
       <div className="w-full md:w-9/12 p-4 mb-4 border-2 dark:border-slate-700">
         <div className='flex justify-between'>
@@ -64,13 +67,13 @@ const CategoryListing = () => {
             {category.charAt(0).toUpperCase() + category.slice(1)} Listings
           </h1>
           <div>
-            dropdown list here
+            <DropDown />
           </div>
         </div>
         <div className="space-y-4">
           {paginatedData.length > 0 ? (
             paginatedData.map(item => (
-              <div key={item.id} className="flex pb-8 rounded-sm overflow-hidden p-2 border dark:border dark:border-slate-600">
+              <div key={item.id} className="flex pb-8 rounded-sm overflow-hidden p-2 border dark:border-slate-600">
                 <Link to={`/story/${encodeURIComponent(item.id)}`} className="flex-shrink-0">
                   <img
                     src={item.urlToImage}
@@ -94,7 +97,7 @@ const CategoryListing = () => {
                     )}
                     {item.secondaryTag && (
                       <Link to={`/category/${item.category}`} className="ml-2">
-                        <span className="text-gray-600 bg-green-100  text-sm px-2 py-1 rounded">{item.secondaryTag}</span>
+                        <span className="text-gray-600 bg-green-100 text-sm px-2 py-1 rounded">{item.secondaryTag}</span>
                       </Link>
                     )}
                   </div>
@@ -109,7 +112,7 @@ const CategoryListing = () => {
           <button
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
+            className={`px-4 py-2 rounded ${currentPage === 1 ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-gray-200 text-gray-700'}`}
           >
             Previous
           </button>
@@ -119,7 +122,7 @@ const CategoryListing = () => {
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
+            className={`px-4 py-2 rounded ${currentPage === totalPages ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-gray-200 text-gray-700'}`}
           >
             Next
           </button>
@@ -143,7 +146,6 @@ const CategoryListing = () => {
         <AdType1 />
       </div>
     </div>
-    </Helmet>
   );
 };
 

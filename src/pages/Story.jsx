@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { sampleData } from '../lib/sampleData'; 
 import { sliderData } from '../Cards/WatchSlider';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 const StoryPage = () => {
   const { id } = useParams();
@@ -15,7 +15,7 @@ const StoryPage = () => {
   }
 
   return (
-    <Helmet>
+    // <Helmet>
     <div className="flex flex-wrap">
       <div className='pb-2 border-b-2 border-dashed dark:border-gray-700'>
         <h1 className="text-4xl font-semibold mb-4">{storyItem.title}</h1>
@@ -52,7 +52,7 @@ const StoryPage = () => {
         </div>
         
         <div className="mt-8">
-          <h2 className="text-xl font-semibold mb-4">Related Articles</h2>
+          <h2 className="text-xl font-semibold mb-4">Related Story</h2>
           {sliderData.map((item, index) => (
             <div key={index} className="mb-4">
               <Link to={`/story/${item.id}`} className="text-blue-500 hover:underline">
@@ -78,7 +78,7 @@ const StoryPage = () => {
         </div> 
       </div>
     </div>
-    </Helmet>
+    // </Helmet>
   );
 };
 

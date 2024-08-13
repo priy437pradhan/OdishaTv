@@ -510,7 +510,7 @@ export const sampleData = [
       urlToImage: viral2,
        category: 'Health', 
        section: 'ViralCardData_card',
-       storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+       storyIntro: 'Global leaders are meeting in Paris Angul to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
        primaryTag: 'Environment',
        secondaryTag: 'Wildfires' 
        },
@@ -546,7 +546,7 @@ export const sampleData = [
       urlToImage: viral6,
        category: 'Health', 
        section: 'ViralCardData_card',
-       storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+       storyIntro: 'Global leaders are meeting in Paris Cuttack to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
        primaryTag: 'Technology',
        secondaryTag: 'Cybersecurity'
        
@@ -558,16 +558,16 @@ export const sampleData = [
      category: 'Health', 
      section: 'DailyShowCard_card',
       description: 'a picture in words of somebody/something or of something that happened',
-      storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+      storyIntro: 'Global leaders are meeting in Cuttack  Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
       primaryTag: 'Environment',
       secondaryTag: 'Wildfires' 
      },
   { id: 58,
-     title: 'Medical Events a picture in words of somebody/something or of something that happened ', 
+     title: 'Medical Events a picture in words Cuttack of somebody/something or of something that happened ', 
      urlToImage: dailyShow2, 
      category: 'Health', 
      section: 'DailyShowCard_card',
-      description: 'a picture in words of somebody/something or of something that happened' ,
+      description: 'a picture in words of Cuttack somebody/something or of something that happened' ,
       storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
       primaryTag: 'Environment',
       secondaryTag: 'Wildfires' 
@@ -578,7 +578,7 @@ export const sampleData = [
       category: 'Health', 
       section: 'DailyShowCard_card',
       description: 'a picture in words of somebody/something or of something that happened ,',
-      storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+      storyIntro: 'Global leaders are meeting in Paris to Balasore discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
       primaryTag: 'Environment',
       secondaryTag: 'Protest' 
      },
@@ -586,20 +586,20 @@ export const sampleData = [
   // { id: 60, title: 'Educational Trends', urlToImage: Img, category: 'Education', section: 'DailyShowCard_card' },
   // { id: 61, title: 'Student Life', urlToImage: Img, category: 'Education', section: 'DailyShowCard_card' },
   { id: 62,
-     title: 'Government unveils plan to improve national healthcare system Rising unemployment rates spark concerns about economic stability.',
+     title: 'Government unveils plan to improve national Balasore healthcare system Rising unemployment rates spark concerns about economic stability.',
       urlToImage: videoSec,
        category: 'Environment',
         section: 'Video_card' ,
-        storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+        storyIntro: 'Global leaders are meeting in Paris to Balasore discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
         primaryTag: 'Environment',
         secondaryTag: 'Wildfires' 
       },
   { id: 63, 
-    title: 'Rising unemployment rates spark concerns about economic stability .', 
+    title: 'Rising unemployment rates spark concerns Balasore about economic stability .', 
     urlToImage: photoSec, 
     category: 'Environment', 
     section: 'Photo_card' ,
-    storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+    storyIntro: 'Global leaders are meeting Balangir in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
     primaryTag: 'Environment',
     secondaryTag: 'Wildfires' 
   },
@@ -609,16 +609,16 @@ export const sampleData = [
      urlToImage: photoSubSec1, 
      category: 'Environment', 
      section: 'PhotoSub_card',
-     storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+     storyIntro: 'Global leaders are meeting  Balangir in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
      primaryTag: 'Health',
      secondaryTag: 'Research' 
      },
   { id: 66,
-     title: 'Government introduces new measures to combat cybercrime.',
+     title: 'Government introduces new Balangir measures to combat cybercrime.',
       urlToImage: photoSubSec2, 
       category: 'Education', 
       section: 'PhotoSub_card' ,
-      storyIntro: 'Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan..',
+      storyIntro: 'Global leaders are meeting in Paris Balangir to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan..',
       primaryTag: 'Health',
       secondaryTag: 'Research' 
     },
@@ -627,12 +627,12 @@ export const sampleData = [
      urlToImage: videoSubSec1, 
      category: 'Education', 
      section: 'VideoSub_card' ,
-     storyIntro: 'A major tech company has revealed an innovative new product.Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
+     storyIntro: 'A major tech company has revealed an Balangir innovative new product.Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health. Global leaders are meeting in Paris to discuss urgent climate change issues.Rising sea levels threaten coastal cities worldwide.New study links diet to improved mental health.Government announces new infrastructure investment plan.',
      primaryTag: 'Technology',
      secondaryTag: 'Innovation' 
     },
   { id: 68,
-     title: 'Education PolicyMajor discovery advances understanding of climate change.',
+     title: 'Education PolicyMajor discovery Balangir advances understanding of climate change.',
       urlToImage: videoSubSec2, 
       category: 'Education',
        section: 'VideoSub_card',
@@ -644,30 +644,30 @@ export const sampleData = [
 ];
 
 
-export const newsArticles = [
-  {id: 1, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',urlToImage: Img },
+export const newsStories = [
+  {id: 1, title: 'Go First Insolvency: What Should The Balangir Airline Do Next to The Highway?',urlToImage: Img },
   { id: 2, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',  urlToImage: Img},
   { id: 3, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: Img}
 ];
 
 export const photos = [
-  {id: 1,title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',urlToImage: "https://via.placeholder.com/300"},
+  {id: 1,title: 'Go First Insolvency: What Angul Should The Airline Do Next to The Highway?',urlToImage: "https://via.placeholder.com/300"},
   {id: 2, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300" },
   { id: 3, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300" }
 ];
 
 export const videos = [
-  { id: 1, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300"},
+  { id: 1, title: 'Go First Insolvency: What Angul Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300"},
   { id: 2, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300"},
   {id: 3, title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: "https://via.placeholder.com/300"}
 ];
 export const Forhome = [
-  { imgSrc: Img, imgAlt: 'Vashu Bhagnani', imgTitle: 'Vashu Bhagnani', title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',},
+  { imgSrc: Img, imgAlt: 'Vashu Bhagnani', imgTitle: 'Vashu Bhagnani', title: 'Go Angul First Insolvency: What Should The Airline Do Next to The Highway?',},
   {  imgSrc: Img, imgAlt: 'Vashu Bhagnani', imgTitle: 'Vashu Bhagnani', title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',},
   { imgSrc: Img, imgAlt: 'Vashu Bhagnani', imgTitle: 'Vashu Bhagnani', title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',},
   ];
 export const ForProfile = [
-  { id: 1, title: "Video 1", title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: Img},
+  { id: 1, title: "Video 1", title: 'Go Angul First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: Img},
   {id: 2, title: "Video 2", title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?', urlToImage: Img},
   {id: 3,title: "Video 3",title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',
   urlToImage: Img}
@@ -678,13 +678,13 @@ export const ForcontactData = [
   {imgSrc: Img,imgAlt: 'Vashu Bhagnani',imgTitle: 'Vashu Bhagnani',title: 'Go First Insolvency: What Should The Airline Do Next to The Highway?',},
 ];
 
-const filterByPrimaryTag = (articles, tag) => {
-  return articles.filter(article => article.primaryTag === tag);
+const filterByPrimaryTag = (stories, tag) => {
+  return stories.filter(story => story.primaryTag === tag);
 };
 
-const filterBySecondaryTag = (articles, tag) => {
-  return articles.filter(article => article.secondaryTag === tag);
+const filterBySecondaryTag = (stories, tag) => {
+  return stories.filter(story => story.secondaryTag === tag);
 };
-export default { sampleData, newsArticles, photos, videos,Forhome, ForProfile, ForcontactData};
+export default { sampleData, newsStories, photos, videos,Forhome, ForProfile, ForcontactData};
 
 

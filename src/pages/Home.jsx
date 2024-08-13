@@ -1,16 +1,15 @@
 import React, { Suspense } from 'react';
-import { Helmet } from 'react-helmet';
-
+import MobilePopup from '../components/MobilePopUp';
 const HomeFirstComponent = React.lazy(() => import('../components/HomeFirstComponent'));
 
 function Home() {
   return (
-    <Helmet>
+    <>
     <Suspense fallback={<div>Loading...</div>}>
       <HomeFirstComponent />
     </Suspense>
-    </Helmet>
-
+  <MobilePopup />
+  </>
   );
 }
 
